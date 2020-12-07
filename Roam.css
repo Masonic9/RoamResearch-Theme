@@ -72,10 +72,6 @@ body,
   color: var(--font-color) !important;
 }
 
-
-
-
-
 /* 主标题和下方正文间距 */
 .roam-body .roam-app .roam-main .roam-article .rm-title-display {
   margin-bottom: 16px !important;
@@ -114,6 +110,20 @@ body,
   margin-right: 8px;
   
 }
+
+/* 下方 Linked References 后的小标题 */
+.rm-ref-page-view-title > a {
+	color: white!important;
+}
+
+/* 回链中的高亮 */
+.roam-highlight,
+.block-highlight-yellow {
+    background-color: var(--main-color) !important;
+    border: 1px solid var(--side-color);
+}
+
+
 @media (max-width: 640px) {
   .roam-center,
 .roam-body-main {
@@ -859,12 +869,6 @@ background: linear-gradient(0deg, var(--custom-background-color-hover) 2px, whit
     max-width: 800px !important;
 }
 
-/* 回链中的高亮 */
-.roam-highlight,
-.block-highlight-yellow {
-    background-color: var(--main-color) !important;
-    border: 1px solid var(--side-color);
-}
 
 /* Highlight */
 span.roam-highlight {
