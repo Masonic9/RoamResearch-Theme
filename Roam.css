@@ -1,10 +1,3 @@
-/* GOOGLE FONTS */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
-
 /* Better Roam Research */
 
 :root {
@@ -26,6 +19,7 @@
 	
 --main-color: #02aab0;
 --side-color: #00cdac;
+--nestlink-color: #white;
 
 /* --main-color: #2af598;
 --side-color: #009efd; */
@@ -36,15 +30,6 @@
 --brackets-color: rgba(255, 255, 255, 0.3);
 --empty-text-color: hsl(203, 5%, 70%);
 }
-
-/* 修改字体 */
-
-div,
-textarea,
-.level2 {
-    font-family: 'Montserrat', 'Noto Serif SC',  sans-serif !important
-}
-
 
 /* 主页面标题 */
 .rm-title-display, .rm-title-textarea, .roam-log-page h1.level2 {
@@ -754,7 +739,7 @@ label.check-container {
 
 /* Colorful Nested Links */
 :root {
-    --custom-background-color: var(--main-color);
+    --custom-background-color: var(--nestlink-color);
     --custom-background-color-hover: var(--side-color);
     }
 
