@@ -922,7 +922,7 @@ hr {
 code {
     margin-right: .2em;
     border-radius: 4px;
-    background: linear-gradient(to right, var(--main-color), var(--side-color));
+    background: transparent;
     border: 1px solid #fff;
     color: white;
     padding: .1em .3em;
