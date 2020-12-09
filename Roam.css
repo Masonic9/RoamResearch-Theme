@@ -945,3 +945,130 @@ div.roam-article span > a:not(.rm-alias-page):after {
 		font-size: 16px;
 	}
   
+  /* Colorful Tag */
+
+span.rm-page-ref[data-tag="EverGreen Notes"], 
+span.rm-page-ref[data-tag="Green"],
+span.rm-page-ref[data-tag="EverGreen Index"]{
+	background-image: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+  	color:#fff !important;
+  	padding: 3px 7px;
+	border-radius: 3px;
+}
+
+span.rm-page-ref[data-tag="SandCastel Notes"], 
+span.rm-page-ref[data-tag="Sand"] {
+	background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  	color:#fff !important;
+  	padding: 3px 7px;
+    border-radius: 3px;
+}
+
+span.rm-page-ref[data-tag="Literature Notes"] {
+  	background-image: linear-gradient(-45deg, #FFC796 0%, #FF6B95 100%);
+  	color:#fff !important;
+  	padding: 3px 7px;
+	border-radius: 3px;
+}
+
+span.rm-page-ref[data-tag="Progressive Summarization - V"] {
+	background-image: linear-gradient(to bottom, #f3a469 0%, #f18271 100%);
+	color:#fff !important;
+  	padding: 3px 7px;
+	border-radius: 3px;
+}
+span.rm-page-ref[data-tag="Progressive Summarization - IV"] {
+	background-image: linear-gradient(to bottom, #f18271 0%, #cc6b8e 100%);
+	color:#fff !important;
+  	padding: 3px 7px;
+	border-radius: 3px;
+}
+span.rm-page-ref[data-tag="Progressive Summarization - III"] {
+	background-image: linear-gradient(to bottom, #cc6b8e 50%, #8f6aae 100%);
+	color:#fff !important;
+  	padding: 3px 7px;
+	border-radius: 3px;
+}
+span.rm-page-ref[data-tag="Progressive Summarization - II"] {
+	background-image: linear-gradient(to bottom, #8f6aae 0%, #7b5fac 100%);
+	color:#fff !important;
+  	padding: 3px 7px;
+	border-radius: 3px;
+}
+span.rm-page-ref[data-tag="Progressive Summarization - I"]{
+	background-image: linear-gradient(to bottom, #7b5fac 0%, #5a55ae 100%);
+  	color:#fff !important;
+  	padding: 3px 7px;
+	border-radius: 3px;
+}
+span.rm-page-ref[data-tag="Principles"],
+span.rm-page-ref[data-tag="Solutions"],
+span.rm-page-ref[data-tag="Thesis"],
+span.rm-page-ref[data-tag="Articles"],
+span.rm-page-ref[data-tag="Books"],
+span.rm-page-ref[data-tag="Figure"],
+span.rm-page-ref[data-tag="Concept"],
+span.rm-page-ref[data-tag="Words"],
+span.rm-page-ref[data-tag="Topic"],
+span.rm-page-ref[data-tag="Chat"]{
+	background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  	color:#ffffff !important;
+  	padding: 3px 7px;
+    border-radius: 3px;
+}
+
+span.rm-page-ref[data-tag="Metadata"] {
+	background-image: linear-gradient(135deg, #ff758c 0%, #ff7eb3 100%);
+  	color:#fff !important;
+  	padding: 3px 7px;
+	border-radius: 3px;
+}
+
+span.rm-page-ref[data-tag="Source"] {
+	background-image: linear-gradient(45deg, #2af598 0%, #009efd 100%);
+  	color:#fff !important;
+  	padding: 3px 7px;
+	border-radius: 3px;
+}
+
+
+
+span.rm-page-ref[data-tag="TODO"],
+span.rm-page-ref[data-tag="WIP"],
+span.rm-page-ref[data-tag="Finished"],
+span.rm-page-ref[data-tag="WIP"] {
+  	background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+  	color:#fff !important;
+  	padding: 3px 7px;
+	border-radius: 3px;
+}
+
+
+
+span.rm-page-ref[data-tag="Shortcuts"],
+span.rm-page-ref[data-tag="Quick Capture"] {
+background-image: linear-gradient(135deg, #f83600 0%, #f9d423 100%);
+  	color:#fff !important;
+  	padding: 3px 7px;
+	border-radius: 3px;
+}
+
+span.rm-page-ref[data-tag="Log"],
+span.rm-page-ref[data-tag="List"],
+span.rm-page-ref[data-tag="Index"]
+{
+	background-image: linear-gradient(45deg, #505285 0%, #585e92 12%, #65689f 25%, #7474b0 37%, #7e7ebb 50%, #8389c7 62%, #9795d4 75%, #a2a1dc 87%, #b5aee4 100%);
+  	color:#fff !important;
+  	padding: 3px 7px;
+	border-radius: 3px;
+}
+
+
+
+
+span.rm-page-ref[data-tag="ComputerScience Concept"] {
+background-image: linear-gradient(-45deg, #88d3ce 0%, #6e45e2 100%);
+	color:#fff !important;
+  	padding: 3px 7px;
+	border-radius: 3px;
+}
