@@ -940,5 +940,8 @@ div.roam-article span > a:not(.rm-alias-page):after {
   html, body, #app {
     background: transparent !important;
   }
-  
+  /* 表格字体调整 */
+	.roam-table th, .roam-table td, .roam-table tr {
+		font-size: 16px;
+	}
   
