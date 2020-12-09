@@ -903,9 +903,9 @@ div.roam-article span > a:not(.rm-alias-page):after {
   hr {
       margin-top: 10px;
       margin-bottom: 10px;
-      border-top: 2px solid white;
+      border-top: 2px solid #8A9BA8;
   }
-  
+
   /* 行内代码 */
   code {
       margin-right: .2em;
