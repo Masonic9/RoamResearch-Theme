@@ -870,14 +870,17 @@ div.roam-article span > a:not(.rm-alias-page):after {
     margin-left: 0px;
   }
   
-  /* aliase颜色 */
+  /* aliase */
   a.rm-alias.rm-alias-external {
-    text-decoration: underline;
     color: white;
+	 text-decoration: underline;
   }
 	/* 超链接颜色 */
 	a {
 		color: white;
+	}
+	a:hover {
+		color: var(--main-color);
 	}
 
 
