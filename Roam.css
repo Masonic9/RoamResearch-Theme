@@ -872,6 +872,7 @@ div.roam-article span > a:not(.rm-alias-page):after {
   
   /* aliase颜色 */
   a.rm-alias.rm-alias-external {
+    text-decoration: underline;
     color: white;
   }
 	/* 超链接颜色 */
