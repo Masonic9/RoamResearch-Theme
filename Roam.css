@@ -871,10 +871,7 @@
   
   /* aliase颜色 */
   a.rm-alias.rm-alias-external {
-    text-decoration: underline;
-     background-image: linear-gradient(to right, #2af598 0%, #009efd 100%);
-     -webkit-background-clip: text; 
-     -webkit-text-fill-color: transparent; 
+    color: white;
   }
   
   /* 双链颜色 */
