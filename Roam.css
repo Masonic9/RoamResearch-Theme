@@ -830,7 +830,7 @@ div.roam-article span > a:not(.rm-alias-page):after {
   
   /* 页面上方的Breadcrumb - 第一级目录 */
   .rm-zoom .rm-zoom-item {
-      color: var(--main-color);
+      color: white;
   
   }
   /* 页面上方的Breadcrumb 鼠标移至的高亮 */
