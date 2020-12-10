@@ -488,6 +488,10 @@ div.roam-article span > a:not(.rm-alias-page):after {
   .block-border-left {
     border-left-color: var(--subtle-border-color) !important;
   }
+	/* 块引用的 Mention 位置调整 */
+	.rm-reference-main {
+	padding-top: 0px;
+	}
   
   .rm-reference-main div > strong {
     color: gray !important;
@@ -1023,8 +1027,7 @@ span.rm-page-ref[data-tag="Figure"],
 span.rm-page-ref[data-tag="Concept"],
 span.rm-page-ref[data-tag="Words"],
 span.rm-page-ref[data-tag="Topic"],
-span.rm-page-ref[data-tag="Chat"],
-span.rm-page-ref[data-tag="Literature"]{
+span.rm-page-ref[data-tag="Chat"]{
 	background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   	color:#ffffff !important;
   	padding: 3px 7px;
