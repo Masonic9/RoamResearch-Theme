@@ -1023,7 +1023,8 @@ span.rm-page-ref[data-tag="Figure"],
 span.rm-page-ref[data-tag="Concept"],
 span.rm-page-ref[data-tag="Words"],
 span.rm-page-ref[data-tag="Topic"],
-span.rm-page-ref[data-tag="Chat"]{
+span.rm-page-ref[data-tag="Chat"],
+span.rm-page-ref[data-tag="Literature"]{
 	background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   	color:#ffffff !important;
   	padding: 3px 7px;
