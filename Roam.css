@@ -924,7 +924,7 @@ div.roam-article span > a:not(.rm-alias-page):after {
 	}
 	.dont-focus-block {
 		background-color: transparent;
-		border: 1px solid white;
+		border: 0px solid white;
 	}
 	label {
 			font-weight: normal
