@@ -915,7 +915,20 @@ div.roam-article span > a:not(.rm-alias-page):after {
       color: white;
       padding: .1em .3em;
   }
-  
+	/* 加密块 */
+	.rm-encrypted-block {
+		font-size: 16px;
+		color: white;
+		padding: 0 0 0 0;
+		background-color:transparent;
+	}
+	.dont-focus-block {
+		background-color: transparent;
+		border: 1px solid white;
+	}
+	label {
+			font-weight: normal
+	}
   
   /* Block Quotes */
   blockquote {
@@ -1063,12 +1076,10 @@ span.rm-page-ref[data-tag="Index"]
 	border-radius: 3px;
 }
 
-
-
-
 span.rm-page-ref[data-tag="ComputerScience Concept"] {
 background-image: linear-gradient(-45deg, #88d3ce 0%, #6e45e2 100%);
 	color:#fff !important;
   	padding: 3px 7px;
 	border-radius: 3px;
 }
+
