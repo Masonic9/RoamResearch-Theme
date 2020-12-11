@@ -36,11 +36,7 @@
       height: auto !important;
       line-height: 1.5 !important;
       font-size: 32px;
-  /*   	font-weight: 600 !important; */
       font-family: 'Noto Serif SC', serif !important;
-  /*   	background: -webkit-linear-gradient(bottom left,var(--main-color), var(--side-color));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent; */
   }
   
   /* 右侧标题的 */
@@ -961,25 +957,21 @@ div.roam-article span > a:not(.rm-alias-page):after {
 	}
   
 /* Colorful Tag */
-
-span.rm-page-ref[data-tag="EverGreen Notes"], 
-span.rm-page-ref[data-tag="Green"],
-span.rm-page-ref[data-tag="EverGreen Index"]{
+span.rm-page-ref[data-tag*="Green"]{
 	background-image: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
   	color:#fff !important;
   	padding: 3px 7px;
 	border-radius: 3px;
 }
 
-span.rm-page-ref[data-tag="SandCastel Notes"], 
-span.rm-page-ref[data-tag="Sand"] {
+span.rm-page-ref[data-tag*="Sand"] {
 	background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
   	color:#fff !important;
   	padding: 3px 7px;
     border-radius: 3px;
 }
 
-span.rm-page-ref[data-tag="Literature Notes"] {
+span.rm-page-ref[data-tag*="Literature"] {
   	background-image: linear-gradient(-45deg, #FFC796 0%, #FF6B95 100%);
   	color:#fff !important;
   	padding: 3px 7px;
@@ -1027,30 +1019,21 @@ span.rm-page-ref[data-tag="P.S.S"]{
 
 
 span.rm-page-ref[data-tag="Principles"],
+span.rm-page-ref[data-tag="Quotes"],
 span.rm-page-ref[data-tag="Solutions"],
-span.rm-page-ref[data-tag="Thesis"],
-span.rm-page-ref[data-tag="Articles"],
+span.rm-page-ref[data-tag="Article"],
 span.rm-page-ref[data-tag="Books"],
 span.rm-page-ref[data-tag="Figure"],
 span.rm-page-ref[data-tag="Concept"],
-span.rm-page-ref[data-tag="Sub Concept"],
 span.rm-page-ref[data-tag="Words"],
-span.rm-page-ref[data-tag="Topic"],
 span.rm-page-ref[data-tag="Chat"],
-span.rm-page-ref[data-tag="Literature"],
-span.rm-page-ref[data-tag="Why?"],
-span.rm-page-ref[data-tag="What?"],
-span.rm-page-ref[data-tag="When?"],
-span.rm-page-ref[data-tag="Who?"],
-span.rm-page-ref[data-tag="Where?"],
+span.rm-page-ref[data-tag^="Wh"],
 span.rm-page-ref[data-tag="How?"]
 {
-	text-overflow: ellipsis;
-	overflow: hidden;
 	background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   	color:#ffffff !important;
   	padding: 3px 7px;
-    border-radius: 3px;
+	border-radius: 3px;
 }
 
 span.rm-page-ref[data-tag="Metadata"] {
@@ -1067,7 +1050,6 @@ span.rm-page-ref[data-tag="Very Important"] {
 	border-radius: 3px;
 }
 
-
 /*
 span.rm-page-ref[data-tag="Source"] {
 	background-image: linear-gradient(45deg, #2af598 0%, #009efd 100%);
@@ -1076,8 +1058,6 @@ span.rm-page-ref[data-tag="Source"] {
 	border-radius: 3px;
 }
 */
-
-
 
 span.rm-page-ref[data-tag="TODO"],
 span.rm-page-ref[data-tag="WIP"],
@@ -1125,9 +1105,12 @@ span.rm-page-ref[data-tag="ComputerScience Concept"] {
   	padding: 3px 7px;
 	border-radius: 3px;
 }
-
-span.rm-page-ref[data-tag="Scenarios Study"],
-span.rm-page-ref[data-tag="Scenarios Work"]{
+span.rm-page-ref[data-tag="Life"],
+span.rm-page-ref[data-tag="Read"],
+span.rm-page-ref[data-tag="Note"],
+span.rm-page-ref[data-tag="Study"],
+span.rm-page-ref[data-tag="Work"],
+span.rm-page-ref[data-tag="Motivation"]{
 	background-color: white;
 	color: black;
 	padding: 3px 7px;
