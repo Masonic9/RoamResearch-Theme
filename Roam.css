@@ -1029,7 +1029,14 @@ span.rm-page-ref[data-tag="Sub Concept"],
 span.rm-page-ref[data-tag="Words"],
 span.rm-page-ref[data-tag="Topic"],
 span.rm-page-ref[data-tag="Chat"],
-span.rm-page-ref[data-tag="Literature"]{
+span.rm-page-ref[data-tag="Literature"],
+span.rm-page-ref[data-tag="Why?"],
+span.rm-page-ref[data-tag="What?"],
+span.rm-page-ref[data-tag="When?"],
+span.rm-page-ref[data-tag="Who?"],
+span.rm-page-ref[data-tag="Where?"],
+span.rm-page-ref[data-tag="How?"]
+{
 	text-overflow: ellipsis;
 	overflow: hidden;
 	background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
