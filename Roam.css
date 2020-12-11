@@ -962,7 +962,7 @@ div.roam-article span > a:not(.rm-alias-page):after {
 		font-size: 16px;
 	}
   
-  /* Colorful Tag */
+/* Colorful Tag */
 
 span.rm-page-ref[data-tag="EverGreen Notes"], 
 span.rm-page-ref[data-tag="Green"],
@@ -989,31 +989,31 @@ span.rm-page-ref[data-tag="Literature Notes"] {
 }
 
 span.rm-page-ref[data-tag="Progressive Summarization - V"] {
-	background-image: linear-gradient(to bottom, #f3a469 0%, #f18271 100%);
+	background-image: linear-gradient(to bottom right, #f3a469 0%, #f18271 100%);
 	color:#fff !important;
   	padding: 3px 7px;
 	border-radius: 3px;
 }
 span.rm-page-ref[data-tag="Progressive Summarization - IV"] {
-	background-image: linear-gradient(to bottom, #f18271 0%, #cc6b8e 100%);
+	background-image: linear-gradient(to bottom right, #f18271 0%, #cc6b8e 100%);
 	color:#fff !important;
   	padding: 3px 7px;
 	border-radius: 3px;
 }
 span.rm-page-ref[data-tag="Progressive Summarization - III"] {
-	background-image: linear-gradient(to bottom, #cc6b8e 50%, #8f6aae 100%);
+	background-image: linear-gradient(to bottom right, #cc6b8e 0%, #8f6aae 100%);
 	color:#fff !important;
   	padding: 3px 7px;
 	border-radius: 3px;
 }
 span.rm-page-ref[data-tag="Progressive Summarization - II"] {
-	background-image: linear-gradient(to bottom, #8f6aae 0%, #7b5fac 100%);
+	background-image: linear-gradient(to bottom right, #8f6aae 0%, #7b5fac 100%);
 	color:#fff !important;
   	padding: 3px 7px;
 	border-radius: 3px;
 }
 span.rm-page-ref[data-tag="Progressive Summarization - I"]{
-	background-image: linear-gradient(to bottom, #7b5fac 0%, #5a55ae 100%);
+	background-image: linear-gradient(to bottom right, #7b5fac 0%, #5a55ae 100%);
   	color:#fff !important;
   	padding: 3px 7px;
 	border-radius: 3px;
@@ -1025,9 +1025,13 @@ span.rm-page-ref[data-tag="Articles"],
 span.rm-page-ref[data-tag="Books"],
 span.rm-page-ref[data-tag="Figure"],
 span.rm-page-ref[data-tag="Concept"],
+span.rm-page-ref[data-tag="Sub Concept"],
 span.rm-page-ref[data-tag="Words"],
 span.rm-page-ref[data-tag="Topic"],
-span.rm-page-ref[data-tag="Chat"]{
+span.rm-page-ref[data-tag="Chat"],
+span.rm-page-ref[data-tag="Literature"]{
+	text-overflow: ellipsis;
+	overflow: hidden;
 	background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   	color:#ffffff !important;
   	padding: 3px 7px;
@@ -1040,6 +1044,15 @@ span.rm-page-ref[data-tag="Metadata"] {
   	padding: 3px 7px;
 	border-radius: 3px;
 }
+
+span.rm-page-ref[data-tag="Very Important"] {
+	background-image: linear-gradient(45deg, #ff0844 0%, #ffb199 100%);
+  	color:#fff !important;
+  	padding: 3px 7px;
+	border-radius: 3px;
+}
+
+
 
 span.rm-page-ref[data-tag="Source"] {
 	background-image: linear-gradient(45deg, #2af598 0%, #009efd 100%);
@@ -1060,6 +1073,14 @@ span.rm-page-ref[data-tag="WIP"] {
 	border-radius: 3px;
 }
 
+span.rm-page-ref[data-tag="Archive"] {
+	background: linear-gradient(to bottom right, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+ 	background-blend-mode:multiply;
+	color:#fff !important;
+  	padding: 3px 7px;
+	border-radius: 3px;
+	
+}
 
 
 span.rm-page-ref[data-tag="Shortcuts"],
@@ -1072,7 +1093,9 @@ background-image: linear-gradient(135deg, #f83600 0%, #f9d423 100%);
 
 span.rm-page-ref[data-tag="Log"],
 span.rm-page-ref[data-tag="List"],
-span.rm-page-ref[data-tag="Index"]
+span.rm-page-ref[data-tag="Index"],
+span.rm-page-ref[data-tag="Post"],
+span.rm-page-ref[data-tag="Posts"]
 {
 	background-image: linear-gradient(45deg, #505285 0%, #585e92 12%, #65689f 25%, #7474b0 37%, #7e7ebb 50%, #8389c7 62%, #9795d4 75%, #a2a1dc 87%, #b5aee4 100%);
   	color:#fff !important;
@@ -1080,16 +1103,12 @@ span.rm-page-ref[data-tag="Index"]
 	border-radius: 3px;
 }
 
+
+
+
 span.rm-page-ref[data-tag="ComputerScience Concept"] {
 background-image: linear-gradient(-45deg, #88d3ce 0%, #6e45e2 100%);
 	color:#fff !important;
-  	padding: 3px 7px;
-	border-radius: 3px;
-}
-
-span.rm-page-ref[data-tag="Very Important"] {
-	background-image: linear-gradient(45deg, #ff0844 0%, #ffb199 100%);
-  	color:#fff !important;
   	padding: 3px 7px;
 	border-radius: 3px;
 }
