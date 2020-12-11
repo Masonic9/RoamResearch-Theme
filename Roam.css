@@ -988,31 +988,31 @@ span.rm-page-ref[data-tag="Literature Notes"] {
 	border-radius: 3px;
 }
 
-span.rm-page-ref[data-tag="Progressive Summarization - V"] {
+span.rm-page-ref[data-tag="P.S.V"] {
 	background-image: linear-gradient(to bottom right, #f3a469 0%, #f18271 100%);
 	color:#fff !important;
   	padding: 3px 7px;
 	border-radius: 3px;
 }
-span.rm-page-ref[data-tag="Progressive Summarization - IV"] {
+span.rm-page-ref[data-tag="P.S.IV"] {
 	background-image: linear-gradient(to bottom right, #f18271 0%, #cc6b8e 100%);
 	color:#fff !important;
   	padding: 3px 7px;
 	border-radius: 3px;
 }
-span.rm-page-ref[data-tag="Progressive Summarization - III"] {
+span.rm-page-ref[data-tag="P.S.III"] {
 	background-image: linear-gradient(to bottom right, #cc6b8e 0%, #8f6aae 100%);
 	color:#fff !important;
   	padding: 3px 7px;
 	border-radius: 3px;
 }
-span.rm-page-ref[data-tag="Progressive Summarization - II"] {
+span.rm-page-ref[data-tag="P.S.II"] {
 	background-image: linear-gradient(to bottom right, #8f6aae 0%, #7b5fac 100%);
 	color:#fff !important;
   	padding: 3px 7px;
 	border-radius: 3px;
 }
-span.rm-page-ref[data-tag="Progressive Summarization - I"]{
+span.rm-page-ref[data-tag="P.S.I"]{
 	background-image: linear-gradient(to bottom right, #7b5fac 0%, #5a55ae 100%);
   	color:#fff !important;
   	padding: 3px 7px;
