@@ -195,9 +195,11 @@
   }
   .rm-level1 div,
   .rm-level1 textarea {
-    font-size: 22px !important;
+    font-size: 26px !important;
     line-height: 1.5 !important;
-    font-weight: 600 !important;
+	font-weight: bold;
+
+	 
   }
   
   h1 {
@@ -210,7 +212,7 @@
   }
   .rm-level2 div,
   .rm-level2 textarea {
-    font-size: 20px !important;
+    font-size: 22px !important;
     line-height: 1.5 !important;
     font-weight: 600 !important;
   }
@@ -221,13 +223,13 @@
   }
   .rm-level3 div,
   .rm-level3 textarea {
-    font-size: 18px !important;
+    font-size: 20px !important;
     line-height: 1.5 !important;
+	  font-weight: 600 !important;
+	  color:white;
+	  
   }
-  
-  .level2 {
-    font-weight: inherit !important;
-  }
+ 
    /* 在链接后面加图标 */
 div.roam-article span > a:not(.rm-alias-page):after {
     content: "";
@@ -947,10 +949,6 @@ div.roam-article span > a:not(.rm-alias-page):after {
     border-left: 5px solid var(--main-color); /* Blockquotes 左侧颜色 */
     font-size: 18px;
     margin-bottom: 0px;
-  }
-  
-  b, strong {
-    font-weight: bold;
   }
   
   /* Support button */
