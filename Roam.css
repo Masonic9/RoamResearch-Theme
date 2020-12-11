@@ -989,35 +989,45 @@ span.rm-page-ref[data-tag="Literature Notes"] {
 }
 
 span.rm-page-ref[data-tag="P.S.V"] {
-	background-image: linear-gradient(to bottom right, #f3a469 0%, #f18271 100%);
+	background-image: linear-gradient(45deg, #f3a469 0%, #f7c978 100%);
 	color:#fff !important;
   	padding: 3px 7px;
 	border-radius: 3px;
 }
 span.rm-page-ref[data-tag="P.S.IV"] {
-	background-image: linear-gradient(to bottom right, #f18271 0%, #cc6b8e 100%);
+	background-image: linear-gradient(45deg, #f18271 0%, #f3a469 100%);
 	color:#fff !important;
   	padding: 3px 7px;
 	border-radius: 3px;
 }
 span.rm-page-ref[data-tag="P.S.III"] {
-	background-image: linear-gradient(to bottom right, #cc6b8e 0%, #8f6aae 100%);
+	background-image: linear-gradient(45deg, #cc6b8e 0%, #f18271 100%);
 	color:#fff !important;
   	padding: 3px 7px;
 	border-radius: 3px;
 }
 span.rm-page-ref[data-tag="P.S.II"] {
-	background-image: linear-gradient(to bottom right, #8f6aae 0%, #7b5fac 100%);
+	background-image: linear-gradient(45deg, #a86aa4 0%, #cc6b8e 100%);
 	color:#fff !important;
   	padding: 3px 7px;
 	border-radius: 3px;
 }
 span.rm-page-ref[data-tag="P.S.I"]{
-	background-image: linear-gradient(to bottom right, #7b5fac 0%, #5a55ae 100%);
+	background-image: linear-gradient(45deg, #8f6aae 0%, #a86aa4 100%);
   	color:#fff !important;
   	padding: 3px 7px;
 	border-radius: 3px;
 }
+span.rm-page-ref[data-tag="P.S.S"]{
+	background-image: linear-gradient(45deg, #5a55ae 0%, #8f6aae 100%);
+  	color:#fff !important;
+  	padding: 3px 7px;
+	border-radius: 3px;
+}
+
+/*background-image: linear-gradient(to top, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);*/
+
+
 span.rm-page-ref[data-tag="Principles"],
 span.rm-page-ref[data-tag="Solutions"],
 span.rm-page-ref[data-tag="Thesis"],
@@ -1060,13 +1070,14 @@ span.rm-page-ref[data-tag="Very Important"] {
 }
 
 
-
+/*
 span.rm-page-ref[data-tag="Source"] {
 	background-image: linear-gradient(45deg, #2af598 0%, #009efd 100%);
   	color:#fff !important;
   	padding: 3px 7px;
 	border-radius: 3px;
 }
+*/
 
 
 
