@@ -966,34 +966,34 @@ div.roam-article span > a:not(.rm-alias-page):after {
 /* Colorful Tag */
 span.rm-page-ref[data-tag="Leaf"]{
 	background-image: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
-  	color:transparent !important;
+  	color:#fff !important;
   	padding: 3px 7px;
 	border-radius: 3px;
 }
 span.rm-page-ref[data-tag="Tree"]{
 	background-image: linear-gradient(to top, #c79081 0%, #dfa579 100%);
-  	color:transparent !important;
+  	color:#fff !important;
   	padding: 3px 7px;
 	border-radius: 3px;
 }
 
 span.rm-page-ref[data-tag="Sand"] {
 	background-image: linear-gradient(45deg, #fda085 0%, #f6d365 100%);
-  	color:transparent !important;
+  	color:#fff !important;
   	padding: 3px 7px;
     border-radius: 3px;
 }
 
 span.rm-page-ref[data-tag="Rose"] {
   	background-image: linear-gradient(-45deg, #FFC796 0%, #FF6B95 100%);
-  	color:transparent !important;
+  	color:#fff !important;
   	padding: 3px 7px;
 	border-radius: 3px;
 }
 
 span.rm-page-ref[data-tag="Sky"] {
   	background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
-  	color:transparent !important;
+  	color:#fff !important;
   	padding: 3px 7px;
 	border-radius: 3px;
 }
@@ -1030,7 +1030,7 @@ span.rm-page-ref[data-tag="I"]{
 }
 span.rm-page-ref[data-tag="S"]{
 	background-image: linear-gradient(45deg, #5a55ae 0%, #8f6aae 100%);
-  	color:transparent !important;
+  	color:#fff !important;
   	padding: 3px 7px;
 	border-radius: 3px;
 }
