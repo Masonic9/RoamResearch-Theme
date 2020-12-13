@@ -964,7 +964,7 @@ div.roam-article span > a:not(.rm-alias-page):after {
 	}	
 
 /* Colorful Tag */
-span.rm-page-ref[data-tag*="Green"]{
+span.rm-page-ref[data-tag*="Leaf"]{
 	background-image: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
   	color:#fff !important;
   	padding: 3px 7px;
@@ -972,50 +972,50 @@ span.rm-page-ref[data-tag*="Green"]{
 }
 
 span.rm-page-ref[data-tag*="Sand"] {
-	background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+	background-image: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
   	color:#fff !important;
   	padding: 3px 7px;
     border-radius: 3px;
 }
 
-span.rm-page-ref[data-tag*="Literature"] {
+span.rm-page-ref[data-tag*="Rose"] {
   	background-image: linear-gradient(-45deg, #FFC796 0%, #FF6B95 100%);
   	color:#fff !important;
   	padding: 3px 7px;
 	border-radius: 3px;
 }
 
-span.rm-page-ref[data-tag="P.S.V"] {
+span.rm-page-ref[data-tag="V"] {
 	background-image: linear-gradient(45deg, #f3a469 0%, #f7c978 100%);
 	color:#fff !important;
   	padding: 3px 7px;
 	border-radius: 3px;
 }
-span.rm-page-ref[data-tag="P.S.IV"] {
+span.rm-page-ref[data-tag="IV"] {
 	background-image: linear-gradient(45deg, #f18271 0%, #f3a469 100%);
 	color:#fff !important;
   	padding: 3px 7px;
 	border-radius: 3px;
 }
-span.rm-page-ref[data-tag="P.S.III"] {
+span.rm-page-ref[data-tag="III"] {
 	background-image: linear-gradient(45deg, #cc6b8e 0%, #f18271 100%);
 	color:#fff !important;
   	padding: 3px 7px;
 	border-radius: 3px;
 }
-span.rm-page-ref[data-tag="P.S.II"] {
+span.rm-page-ref[data-tag="II"] {
 	background-image: linear-gradient(45deg, #a86aa4 0%, #cc6b8e 100%);
 	color:#fff !important;
   	padding: 3px 7px;
 	border-radius: 3px;
 }
-span.rm-page-ref[data-tag="P.S.I"]{
+span.rm-page-ref[data-tag="I"]{
 	background-image: linear-gradient(45deg, #8f6aae 0%, #a86aa4 100%);
   	color:#fff !important;
   	padding: 3px 7px;
 	border-radius: 3px;
 }
-span.rm-page-ref[data-tag="P.S.S"]{
+span.rm-page-ref[data-tag="S"]{
 	background-image: linear-gradient(45deg, #5a55ae 0%, #8f6aae 100%);
   	color:#fff !important;
   	padding: 3px 7px;
@@ -1034,7 +1034,7 @@ span.rm-page-ref[data-tag="Book"],
 span.rm-page-ref[data-tag="Figure"],
 span.rm-page-ref[data-tag="Concept"],
 span.rm-page-ref[data-tag="Words"],
-span.rm-page-ref[data-tag="Chat"],
+span.rm-page-ref[data-tag="Thesis"],
 span.rm-page-ref[data-tag^="Wh"],
 span.rm-page-ref[data-tag="How?"]
 {
@@ -1068,7 +1068,6 @@ span.rm-page-ref[data-tag="Relevant"] {
 
 
 span.rm-page-ref[data-tag="TODO"],
-span.rm-page-ref[data-tag="WIP"],
 span.rm-page-ref[data-tag="Finished"],
 span.rm-page-ref[data-tag="WIP"] {
   	background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
@@ -1085,7 +1084,6 @@ span.rm-page-ref[data-tag="Archive"] {
 	border-radius: 3px;
 	
 }
-
 
 span.rm-page-ref[data-tag="Shortcuts"],
 span.rm-page-ref[data-tag="Quick Capture"] {
@@ -1111,17 +1109,6 @@ span.rm-page-ref[data-tag="ComputerScience Concept"] {
 	background-image: linear-gradient(-45deg, #88d3ce 0%, #6e45e2 100%);
 	color:#fff !important;
   	padding: 3px 7px;
-	border-radius: 3px;
-}
-span.rm-page-ref[data-tag="Life"],
-span.rm-page-ref[data-tag="Read"],
-span.rm-page-ref[data-tag="Note"],
-span.rm-page-ref[data-tag="Study"],
-span.rm-page-ref[data-tag="Work"],
-span.rm-page-ref[data-tag="Motivation"]{
-	background-color: white;
-	color: black;
-	padding: 3px 7px;
 	border-radius: 3px;
 }
 
