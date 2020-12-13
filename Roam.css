@@ -964,22 +964,35 @@ div.roam-article span > a:not(.rm-alias-page):after {
 	}	
 
 /* Colorful Tag */
-span.rm-page-ref[data-tag*="Leaf"]{
+span.rm-page-ref[data-tag="Leaf"]{
 	background-image: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
   	color:#fff !important;
   	padding: 3px 7px;
 	border-radius: 3px;
 }
+span.rm-page-ref[data-tag="Tree"]{
+	background-image: linear-gradient(to top, #c79081 0%, #dfa579 100%);
+  	color:#fff !important;
+  	padding: 3px 7px;
+	border-radius: 3px;
+}
 
-span.rm-page-ref[data-tag*="Sand"] {
-	background-image: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+span.rm-page-ref[data-tag="Sand"] {
+	background-image: linear-gradient(45deg, #fda085 0%, #f6d365 100%);
   	color:#fff !important;
   	padding: 3px 7px;
     border-radius: 3px;
 }
 
-span.rm-page-ref[data-tag*="Rose"] {
+span.rm-page-ref[data-tag="Rose"] {
   	background-image: linear-gradient(-45deg, #FFC796 0%, #FF6B95 100%);
+  	color:#fff !important;
+  	padding: 3px 7px;
+	border-radius: 3px;
+}
+
+span.rm-page-ref[data-tag="Sky"] {
+  	background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
   	color:#fff !important;
   	padding: 3px 7px;
 	border-radius: 3px;
@@ -1044,19 +1057,12 @@ span.rm-page-ref[data-tag="How?"]
 	border-radius: 3px;
 }
 
-span.rm-page-ref[data-tag="Metadata"] {
-	background-image: linear-gradient(135deg, #ff758c 0%, #ff7eb3 100%);
-  	color:#fff !important;
-  	padding: 3px 7px;
-	border-radius: 3px;
-}
-
-span.rm-page-ref[data-tag="Very Important"] {
+/* span.rm-page-ref[data-tag="Very Important"] {
 	background-image: linear-gradient(45deg, #ff0844 0%, #ffb199 100%);
   	color:#fff !important;
   	padding: 3px 7px;
 	border-radius: 3px;
-}
+} */
 
 
 span.rm-page-ref[data-tag="Relevant"] {
@@ -1068,8 +1074,7 @@ span.rm-page-ref[data-tag="Relevant"] {
 
 
 span.rm-page-ref[data-tag="TODO"],
-span.rm-page-ref[data-tag="Finished"],
-span.rm-page-ref[data-tag="WIP"] {
+span.rm-page-ref[data-tag="DONE"] {
   	background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
   	color:#fff !important;
   	padding: 3px 7px;
@@ -1082,7 +1087,6 @@ span.rm-page-ref[data-tag="Archive"] {
 	color:#fff !important;
   	padding: 3px 7px;
 	border-radius: 3px;
-	
 }
 
 span.rm-page-ref[data-tag="Shortcuts"],
@@ -1111,7 +1115,7 @@ span.rm-page-ref[data-tag="ComputerScience Concept"] {
   	padding: 3px 7px;
 	border-radius: 3px;
 }
-
+span.rm-page-ref[data-tag="Bird"],
 span.rm-page-ref[data-tag="if"],
 span.rm-page-ref[data-tag="then"]{
 	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
