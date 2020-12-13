@@ -1118,7 +1118,7 @@ span.rm-page-ref[data-tag="ComputerScience Concept"] {
 
 span.rm-page-ref[data-tag="Bird"] {
 	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-	color: transparent;
+	color: #fff !important;
 	padding: 3px 7px;
 	border-radius: 3px;
 }
