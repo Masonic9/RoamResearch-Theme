@@ -1054,10 +1054,7 @@ span.rm-page-ref[data-tag="Book"],
 span.rm-page-ref[data-tag="Figure"],
 span.rm-page-ref[data-tag="Concept"],
 span.rm-page-ref[data-tag="Words"],
-span.rm-page-ref[data-tag="Thesis"],
-span.rm-page-ref[data-tag^="Wh"],
-span.rm-page-ref[data-tag="How?"]
-{
+span.rm-page-ref[data-tag="Thesis"]{
 	background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   	color:#ffffff !important;
   	padding: 3px 7px;
@@ -1123,6 +1120,8 @@ span.rm-page-ref[data-tag="ComputerScience Concept"] {
 	border-radius: 3px;
 }
 
+span.rm-page-ref[data-tag^="Wh"],
+span.rm-page-ref[data-tag="How?"],
 span.rm-page-ref[data-tag="Bird"] {
 	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 	color: #fff !important;
