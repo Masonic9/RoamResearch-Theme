@@ -189,8 +189,7 @@
   .rm-level1 {
     margin-top: -4px !important;
   }
-  .rm-level1 div,
-  .rm-level1 textarea {
+  .rm-level1, .rm-heading-level-1 > .rm-block__self .rm-block__input {
     font-size: 26px !important;
     line-height: 1.5 !important;
 	font-weight: bold;
@@ -206,8 +205,7 @@
   .rm-level2 {
     margin-top: -3px !important;
   }
-  .rm-level2 div,
-  .rm-level2 textarea {
+  .rm-level2, .rm-heading-level-2 > .rm-block__self .rm-block__input {
     font-size: 22px !important;
     line-height: 1.5 !important;
     font-weight: 600 !important;
@@ -217,8 +215,7 @@
   .rm-level3 {
     margin-top: -2px !important;
   }
-  .rm-level3 div,
-  .rm-level3 textarea {
+  .rm-level3, .rm-heading-level-3 > .rm-block__self .rm-block__input {
     font-size: 20px !important;
     line-height: 1.5 !important;
 	  font-weight: 600 !important;
