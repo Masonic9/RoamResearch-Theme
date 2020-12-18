@@ -1057,10 +1057,9 @@ span.rm-page-ref[data-tag="Index"] {
 }
 
 .roam-block-container[data-page-links*='Seed'] > div.rm-block-main > div.rm-block-text > span,
-.roam-block-container[data-page-links^='["Relevant'] > div.rm-block-main > div.rm-block-text > span,
-.roam-block-container[data-page-links^='["Sand'] > div.rm-block-main > div.rm-block-text > span,
-.roam-block-container[data-page-links^='["Crystal'] > div.rm-block-main > div.rm-block-text > span {
-	
+.roam-block-container[data-page-links*='Relevant'] > div.rm-block-main > div.rm-block-text > span,
+.roam-block-container[data-page-links*='Sand'] > div.rm-block-main > div.rm-block-text > span,
+.roam-block-container[data-page-links*='Crystal'] > div.rm-block-main > div.rm-block-text > span {
 	background-color: #303030;
 	border-radius: 8px;
 	padding: 3px 7px 3px 0px;
