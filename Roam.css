@@ -976,10 +976,20 @@ span.rm-page-ref[data-tag="Garden"]{
 	border-radius: 3px;
 }
 
-/*background-image: linear-gradient(to top, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);*/
+.roam-block-container[data-page-links*='Solutions'] > div.rm-block-main > div.rm-block-text > span,
+.roam-block-container[data-page-links*='Procedure'] > div.rm-block-main > div.rm-block-text > span,
+.roam-block-container[data-page-links*='Article'] > div.rm-block-main > div.rm-block-text > span,
+.roam-block-container[data-page-links*='Principles'] > div.rm-block-main > div.rm-block-text > span,
+.roam-block-container[data-page-links*='Book'] > div.rm-block-main > div.rm-block-text > span,
+.roam-block-container[data-page-links*='Figure'] > div.rm-block-main > div.rm-block-text > span,
+.roam-block-container[data-page-links*='Concept'] > div.rm-block-main > div.rm-block-text > span {
+	background-color: #303030;
+	border-radius: 3px;
+	padding: 3px 7px 3px 0px;
+}
 
-
-span.rm-page-ref[data-tag="Principles"],
+span.rm-page-ref[data-tag="Concept"],
+span.rm-page-ref[data-tag^="Principles"],
 span.rm-page-ref[data-tag^="Procedure"],
 span.rm-page-ref[data-tag="Solutions"],
 span.rm-page-ref[data-tag="Article"],
@@ -999,27 +1009,6 @@ span.rm-page-ref[data-tag="Thesis"]{
   	padding: 3px 7px;
 	border-radius: 3px;
 } */
-
-span.rm-page-ref[data-tag="Concept"] {
-	background-color: #667eea;
-  	background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
-  	color:#ffffff !important;
-  	padding: 3px 7px;
-	border-radius: 3px;
-}
-
-.roam-block-container[data-page-links*='Concept'] > div.rm-block-main > div.rm-block-text > span {
-	background-color: #303030;
-	border-radius: 8px;
-	padding: 3px 7px 3px 0px;
-}
-
-span.rm-page-ref[data-tag="Relevant"] {
-	background-image: linear-gradient(45deg, #2af598 0%, #009efd 100%);
-  	color:#fff !important;
-  	padding: 3px 7px;
-	border-radius: 3px;
-}
 
 
 span.rm-page-ref[data-tag="TODO"],
@@ -1046,18 +1035,6 @@ background-image: linear-gradient(135deg, #f83600 0%, #f9d423 100%);
 	border-radius: 3px;
 }
 
-span.rm-page-ref[data-tag="Log"],
-span.rm-page-ref[data-tag="List"],
-span.rm-page-ref[data-tag="Index"],
-span.rm-page-ref[data-tag="Post"],
-span.rm-page-ref[data-tag="Posts"]
-{
-	background-image: linear-gradient(45deg, #505285 0%, #585e92 12%, #65689f 25%, #7474b0 37%, #7e7ebb 50%, #8389c7 62%, #9795d4 75%, #a2a1dc 87%, #b5aee4 100%);
-  	color:#fff !important;
-  	padding: 3px 7px;
-	border-radius: 3px;
-}
-
 span.rm-page-ref[data-tag="ComputerScience Concept"] {
 	background-image: linear-gradient(-45deg, #88d3ce 0%, #6e45e2 100%);
 	color:#fff !important;
@@ -1065,7 +1042,22 @@ span.rm-page-ref[data-tag="ComputerScience Concept"] {
 	border-radius: 3px;
 }
 
+.roam-block-container[data-page-links*='Relevant'] > div.rm-block-main > div.rm-block-text > span {
+	background-color: #303030;
+	border-radius: 8px;
+	padding: 3px 7px 3px 0px;
+}
+
+span.rm-page-ref[data-tag="Relevant"] {
+	background-color: #485563;
+	color:white !important;
+  	padding: 3px 7px;
+	width: 50px;
+	border-radius: 3px;
+}
+
 .roam-block-container[data-page-links*='Crystal'] > div.rm-block-main > div.rm-block-text > span {
+	
 	background-color: #303030;
 	border-radius: 8px;
 	padding: 3px 7px 3px 0px;
@@ -1093,8 +1085,6 @@ span.rm-page-ref[data-tag="Reference"]{
 	border-radius: 3px;
 }
 
-
-
 span.rm-page-ref[data-tag="Tree"]{
 	background-image: linear-gradient(to top, #c79081 0%, #dfa579 100%);
   	color:#fff !important;
@@ -1102,14 +1092,14 @@ span.rm-page-ref[data-tag="Tree"]{
 	border-radius: 3px;
 }
 
-span.rm-page-ref[data-tag="Leaf"]{
+span.rm-page-ref[data-tag="Seed"]{
 	background-color: #303030;
   	color:#fff !important;
 	padding-top: 3px;
 	padding-bottom: 3px;
 	padding-left: 5px;
 	padding-right: 8px;
- 	border-left: 5px solid #43e97b;	
+ 	border-left: 3px solid #43e97b;	
 	border-radius: 3px;
 }
 
@@ -1120,7 +1110,7 @@ span.rm-page-ref[data-tag="Rose"] {
 	padding-bottom: 3px;
 	padding-left: 5px;
 	padding-right: 8px;
- 	border-left: 5px solid #ff6b95;	
+ 	border-left: 3px solid #ff7373;	
 	border-radius: 3px;
 }
 
@@ -1131,30 +1121,39 @@ span.rm-page-ref[data-tag="Sand"] {
 	padding-bottom: 3px;
 	padding-left: 5px;
 	padding-right: 8px;
- 	border-left: 5px solid #f6d365;	
+ 	border-left: 3px solid #f6d365;	
 	border-radius: 3px;
 }
 
-span.rm-page-ref[data-tag="Fleeting Notes"],
-span.rm-page-ref[data-tag="Literature Notes"],
-span.rm-page-ref[data-tag="Reference Notes"] {
-/* 	border: 1px solid white; */
-	color:#fff !important;
-  	padding: 3px 7px;
-	border-radius: 8px;
+span.rm-page-ref[data-tag="Bird"] {
+	background-color: #303030;
+  	color:#fff !important;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 5px;
+	padding-right: 8px;
+ 	border-left: 3px solid #abe4ef;	
+	border-radius: 3px;
 }
 
-span.rm-page-ref[data-tag^="Ref."],
+span.rm-page-ref[data-tag="Log"],
+span.rm-page-ref[data-tag="List"],
+span.rm-page-ref[data-tag="Index"],
+span.rm-page-ref[data-tag="Post"],
+span.rm-page-ref[data-tag="Posts"],
 span.rm-page-ref[data-tag^="Wh"],
+span.rm-page-ref[data-tag^="是什么？"],
 span.rm-page-ref[data-tag="How?"],
-span.rm-page-ref[data-tag="42SmartBlock"],
-span.rm-page-ref[data-tag="Do"],
-span.rm-page-ref[data-tag="eg."],
-span.rm-page-ref[data-tag="Know"],
-span.rm-page-ref[data-tag="Bird"] {
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-	color: #fff !important;
-	padding: 3px 7px;
+span.rm-page-ref[data-tag^="Ref."],
+span.rm-page-ref[data-tag^="Rel."],
+span.rm-page-ref[data-tag="42SmartBlock"]{
+	background-color: #303030;
+  	color:#fff !important;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 5px;
+	padding-right: 8px;
+ 	border-left: 3px solid #705FBD;	
 	border-radius: 3px;
 }
 
