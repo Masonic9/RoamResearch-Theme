@@ -809,7 +809,7 @@ div.roam-article span > a:not(.rm-alias-page):after {
   
   /* Outer Bullet */
   .rm-bullet.rm-bullet--closed .rm-bullet__inner {
-    background-color: var(--main-color)!important;
+    background-color: #485563!important;
   }
   
   
@@ -1042,13 +1042,13 @@ span.rm-page-ref[data-tag="ComputerScience Concept"] {
 	border-radius: 3px;
 }
 
-.roam-block-container[data-page-links*='Relevant'] > div.rm-block-main > div.rm-block-text > span {
+.roam-block-container[data-page-links*='Index'] > div.rm-block-main > div.rm-block-text > span {
 	background-color: #303030;
 	border-radius: 8px;
 	padding: 3px 7px 3px 0px;
 }
 
-span.rm-page-ref[data-tag="Relevant"] {
+span.rm-page-ref[data-tag="Index"] {
 	background-color: #485563;
 	color:white !important;
   	padding: 3px 7px;
@@ -1056,19 +1056,14 @@ span.rm-page-ref[data-tag="Relevant"] {
 	border-radius: 3px;
 }
 
-.roam-block-container[data-page-links*='Crystal'] > div.rm-block-main > div.rm-block-text > span {
+.roam-block-container[data-page-links*='Seed'] > div.rm-block-main > div.rm-block-text > span,
+.roam-block-container[data-page-links^='["Relevant'] > div.rm-block-main > div.rm-block-text > span,
+.roam-block-container[data-page-links^='["Sand'] > div.rm-block-main > div.rm-block-text > span,
+.roam-block-container[data-page-links^='["Crystal'] > div.rm-block-main > div.rm-block-text > span {
 	
 	background-color: #303030;
 	border-radius: 8px;
 	padding: 3px 7px 3px 0px;
-}
-
-span.rm-page-ref[data-tag="Crystal"] {
-	background-color: #485563;
-	color:white !important;
-  	padding: 3px 7px;
-	width: 50px;
-	border-radius: 3px;
 }
 
 span.rm-page-ref[data-tag="Reference"]{
@@ -1093,8 +1088,8 @@ span.rm-page-ref[data-tag="Tree"]{
 }
 
 span.rm-page-ref[data-tag="Seed"]{
-	background-color: #303030;
-  	color:#fff !important;
+	background-color: #485563;
+	color:white !important;
 	padding-top: 3px;
 	padding-bottom: 3px;
 	padding-left: 5px;
@@ -1115,13 +1110,35 @@ span.rm-page-ref[data-tag="Rose"] {
 }
 
 span.rm-page-ref[data-tag="Sand"] {
-	background-color: #303030;
-  	color:#fff !important;
+	background-color: #485563;
+	color:white !important;
 	padding-top: 3px;
 	padding-bottom: 3px;
 	padding-left: 5px;
 	padding-right: 8px;
  	border-left: 3px solid #f6d365;	
+	border-radius: 3px;
+}
+
+span.rm-page-ref[data-tag="Crystal"] {
+	background-color: #485563;
+	color:white !important;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 5px;
+	padding-right: 8px;
+ 	border-left: 3px solid #9795f0;	
+	border-radius: 3px;
+}
+
+span.rm-page-ref[data-tag="Relevant"] {
+	background-color: #485563;
+	color:white !important;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 5px;
+	padding-right: 8px;
+ 	border-left: 3px solid #8ec5fc;	
 	border-radius: 3px;
 }
 
@@ -1138,7 +1155,6 @@ span.rm-page-ref[data-tag="Bird"] {
 
 span.rm-page-ref[data-tag="Log"],
 span.rm-page-ref[data-tag="List"],
-span.rm-page-ref[data-tag="Index"],
 span.rm-page-ref[data-tag="Post"],
 span.rm-page-ref[data-tag="Posts"],
 span.rm-page-ref[data-tag^="Wh"],
