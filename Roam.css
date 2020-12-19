@@ -1059,6 +1059,7 @@ span.rm-page-ref[data-tag="Index"] {
 	border-radius: 3px;
 }
 
+.roam-block-container[data-page-links*='Bubble'] > div.rm-block-main > div.rm-block-text > span,
 .roam-block-container[data-page-links*='Bird'] > div.rm-block-main > div.rm-block-text > span,
 .roam-block-container[data-page-links*='Rose'] > div.rm-block-main > div.rm-block-text > span,
 .roam-block-container[data-page-links*='Seed'] > div.rm-block-main > div.rm-block-text > span,
@@ -1089,6 +1090,17 @@ span.rm-page-ref[data-tag="Rose"] {
 	padding-left: 5px;
 	padding-right: 8px;
  	border-left: 3px solid #ff7373;	
+	border-radius: 3px;
+}
+
+span.rm-page-ref[data-tag="Bubble"] {
+	background-color: #485563;
+  	color:#fff !important;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 5px;
+	padding-right: 8px;
+ 	border-left: 3px solid #00f2fe;	
 	border-radius: 3px;
 }
 
