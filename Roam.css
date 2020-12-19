@@ -68,10 +68,7 @@
     margin-bottom: 16px;
   }
   
-  /* 右侧的引用次数统计小按钮 */
-  .bp3-button:not(.bp3-intent-primary) {
-    color: var(--font-color-lighter) !important;
-  }
+
   
   html,
   body,
@@ -960,6 +957,12 @@ div.roam-article span > a:not(.rm-alias-page):after {
 		background-color: white;
 	}	
 
+	/* 右侧的引用次数统计小按钮以及Link小按钮 */
+	.bp3-button:not(.bp3-intent-primary) {
+		color: #888 !important;
+	}
+  
+
 /* Colorful Tag */
 
 span.rm-page-ref[data-tag="Sky"] {
@@ -988,6 +991,7 @@ span.rm-page-ref[data-tag="Garden"]{
 	padding: 3px 7px 3px 0px;
 }
 
+span.rm-page-ref[data-tag="Terminology"],
 span.rm-page-ref[data-tag="Concept"],
 span.rm-page-ref[data-tag^="Principles"],
 span.rm-page-ref[data-tag^="Procedure"],
@@ -997,9 +1001,14 @@ span.rm-page-ref[data-tag="Book"],
 span.rm-page-ref[data-tag="Figure"],
 span.rm-page-ref[data-tag="Words"],
 span.rm-page-ref[data-tag="Thesis"]{
-	background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  	color:#ffffff !important;
-  	padding: 3px 7px;
+/* 	background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
+	background-color: #485563;
+	color:white !important;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 5px;
+	padding-right: 8px;
+ 	border-left: 3px solid #705FBD;	
 	border-radius: 3px;
 }
 
@@ -1010,9 +1019,8 @@ span.rm-page-ref[data-tag="Thesis"]{
 	border-radius: 3px;
 } */
 
-
-span.rm-page-ref[data-tag="TODO"],
-span.rm-page-ref[data-tag="DONE"] {
+span.rm-page-ref[data-tag="WIP"],
+span.rm-page-ref[data-tag="TODO"] {
   	background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
   	color:#fff !important;
   	padding: 3px 7px;
@@ -1056,6 +1064,8 @@ span.rm-page-ref[data-tag="Index"] {
 	border-radius: 3px;
 }
 
+.roam-block-container[data-page-links*='Bird'] > div.rm-block-main > div.rm-block-text > span,
+.roam-block-container[data-page-links*='Rose'] > div.rm-block-main > div.rm-block-text > span,
 .roam-block-container[data-page-links*='Seed'] > div.rm-block-main > div.rm-block-text > span,
 .roam-block-container[data-page-links*='Relevant'] > div.rm-block-main > div.rm-block-text > span,
 .roam-block-container[data-page-links*='Sand'] > div.rm-block-main > div.rm-block-text > span,
@@ -1063,27 +1073,6 @@ span.rm-page-ref[data-tag="Index"] {
 	background-color: #303030;
 	border-radius: 8px;
 	padding: 3px 7px 3px 0px;
-}
-
-span.rm-page-ref[data-tag="Reference"]{
-/* 	background-color: #29323c; */
-	background-color: #303030;
-/* 	background-color: #243949; */
-/* 	background-color: #304352; */
-  	color:#fff !important;
-	padding-top: 3px;
-	padding-bottom: 3px;
-	padding-left: 5px;
-	padding-right: 8px;
- 	border-left: 5px solid #485563;	
-	border-radius: 3px;
-}
-
-span.rm-page-ref[data-tag="Tree"]{
-	background-image: linear-gradient(to top, #c79081 0%, #dfa579 100%);
-  	color:#fff !important;
-  	padding: 3px 7px;
-	border-radius: 3px;
 }
 
 span.rm-page-ref[data-tag="Seed"]{
@@ -1098,7 +1087,7 @@ span.rm-page-ref[data-tag="Seed"]{
 }
 
 span.rm-page-ref[data-tag="Rose"] {
-	background-color: #303030;
+	background-color: #485563;
   	color:#fff !important;
 	padding-top: 3px;
 	padding-bottom: 3px;
@@ -1140,9 +1129,20 @@ span.rm-page-ref[data-tag="Relevant"] {
  	border-left: 3px solid #8ec5fc;	
 	border-radius: 3px;
 }
+span.rm-page-ref[data-tag="Topic"] {
+	background-color: #485563;
+	color:white !important;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 5px;
+	padding-right: 8px;
+ 	border-left: 3px solid #667eea;	
+	border-radius: 3px;
+}
+
 
 span.rm-page-ref[data-tag="Bird"] {
-	background-color: #303030;
+	background-color: #485563;
   	color:#fff !important;
 	padding-top: 3px;
 	padding-bottom: 3px;
