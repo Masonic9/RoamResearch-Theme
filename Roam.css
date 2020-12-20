@@ -964,7 +964,7 @@ div.roam-article span > a:not(.rm-alias-page):after {
   
 
 /* Colorful Tag */
-span.rm-page-ref {
+span.rm-page-ref-tag {
 	padding-top: 3px;
 	padding-bottom: 3px;
 	border-radius: 3px;
