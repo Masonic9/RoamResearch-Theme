@@ -731,8 +731,7 @@ div.roam-article span > a:not(.rm-alias-page):after {
       --custom-background-color: var(--nestlink-color);
       --custom-background-color-hover: var(--side-color);
       }
-  
-  
+
   .rm-page-ref-link-color{
   /*    color: #fff1eb !important; */
       background: linear-gradient(0deg, var(--custom-background-color) 2px, white 1px, transparent 1px);
@@ -867,10 +866,24 @@ div.roam-article span > a:not(.rm-alias-page):after {
   }
   
   /* aliase */
-  a.rm-alias.rm-alias-external {
+  a[class="rm-alias rm-alias-external"] {
     color: white;
 	 text-decoration: underline;
   }
+	a[class="rm-alias rm-alias-page"] {
+		background: linear-gradient(0deg, var(--custom-background-color) 2px, white 1px, transparent 1px);
+      line-height: 24px;
+      padding-bottom: 4px;
+	}
+	
+	a[class="rm-alias rm-alias-page"]:hover {
+		background: linear-gradient(0deg, var(--custom-background-color-hover) 2px, white 1px, transparent 1px);
+      text-decoration: none;
+      line-height: 24px;
+      padding-bottom: 4px;
+		color: white;
+	}
+
 	/* 超链接颜色 */
 	a {
 		color: white;
@@ -971,9 +984,14 @@ span.rm-page-ref-tag {
 	color:#fff !important;
 	padding-left: 5px;
 	padding-right: 8px;
+	background-color: #485563;
+}
+span.rm-page-ref-tag:first-letter {
+	visibility: hidden;
 }
 
 /* 带后托盘的Tag */ 
+.roam-block-container[data-page-links*='Video'] > div.rm-block-main > div.rm-block-text > span,
 .roam-block-container[data-page-links*='Index'] > div.rm-block-main > div.rm-block-text > span,
 .roam-block-container[data-page-links*='Solutions'] > div.rm-block-main > div.rm-block-text > span,
 .roam-block-container[data-page-links*='Procedure'] > div.rm-block-main > div.rm-block-text > span,
@@ -996,33 +1014,7 @@ span.rm-page-ref-tag {
 }
 
 /* 带后托盘的Tag 泛用设置 */ 
-span.rm-page-ref[data-tag="Terminology"],
-span.rm-page-ref[data-tag="Concept"],
-span.rm-page-ref[data-tag^="Principles"],
-span.rm-page-ref[data-tag^="Procedure"],
-span.rm-page-ref[data-tag="Solutions"],
-span.rm-page-ref[data-tag="Article"],
-span.rm-page-ref[data-tag="Book"],
-span.rm-page-ref[data-tag="Figure"],
-span.rm-page-ref[data-tag="Words"],
-span.rm-page-ref[data-tag="Log"],
-span.rm-page-ref[data-tag^="Wh"],
-span.rm-page-ref[data-tag="How?"],
-span.rm-page-ref[data-tag^="Reference"],
-span.rm-page-ref[data-tag="Index"],
-span.rm-page-ref[data-tag^="Log"],
-span.rm-page-ref[data-tag="Skill"],
-span.rm-page-ref[data-tag="Topic"],
-span.rm-page-ref[data-tag="Bird"],
-span.rm-page-ref[data-tag="Relevant"],
-span.rm-page-ref[data-tag="Crystal"],
-span.rm-page-ref[data-tag="Sand"],
-span.rm-page-ref[data-tag="Bubble"],
-span.rm-page-ref[data-tag="Rose"],
-span.rm-page-ref[data-tag="Seed"]{
-	background-color: #485563;
-}
-
+span.rm-page-ref[data-tag="Video"],
 span.rm-page-ref[data-tag="Terminology"],
 span.rm-page-ref[data-tag="Concept"],
 span.rm-page-ref[data-tag^="Principles"],
@@ -1081,6 +1073,12 @@ span.rm-page-ref[data-tag="Index"] {
 span.rm-page-ref[data-tag="Skill"] {
  	border-left: 3px solid #37ecba;	
 }
+span.rm-page-ref[data-tag="Category"] {
+ 	border-left: 3px solid #b8cbb8;	
+}
+span.rm-page-ref[data-tag="Taxonomy"] {
+	border-left: 3px solid #b8cbb8;	
+}
 
 /* 全彩Tag */
 span.rm-page-ref[data-tag^="TO"]{
@@ -1102,3 +1100,5 @@ background-image: linear-gradient(135deg, #f83600 0%, #f9d423 100%);
 .tribute-container li {
 	background-color: #202020;
 }
+
+
