@@ -964,91 +964,24 @@ div.roam-article span > a:not(.rm-alias-page):after {
   
 
 /* Colorful Tag */
-
-span.rm-page-ref[data-tag="Sky"] {
-  	background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
-  	color:#fff !important;
-  	padding: 3px 7px;
+span.rm-page-ref {
+	padding-top: 3px;
+	padding-bottom: 3px;
 	border-radius: 3px;
+	color:#fff !important;
+	padding-left: 5px;
+	padding-right: 8px;
 }
 
-span.rm-page-ref[data-tag="Garden"]{
-	background-image: linear-gradient(45deg, #0ba360 0%, #3cba92 100%);
-	color: white;
-	padding: 3px 7px;
-	border-radius: 3px;
-}
-
+/* 带后托盘的Tag */ 
+.roam-block-container[data-page-links*='Index'] > div.rm-block-main > div.rm-block-text > span,
 .roam-block-container[data-page-links*='Solutions'] > div.rm-block-main > div.rm-block-text > span,
 .roam-block-container[data-page-links*='Procedure'] > div.rm-block-main > div.rm-block-text > span,
 .roam-block-container[data-page-links*='Article'] > div.rm-block-main > div.rm-block-text > span,
 .roam-block-container[data-page-links*='Principles'] > div.rm-block-main > div.rm-block-text > span,
 .roam-block-container[data-page-links*='Book'] > div.rm-block-main > div.rm-block-text > span,
 .roam-block-container[data-page-links*='Figure'] > div.rm-block-main > div.rm-block-text > span,
-.roam-block-container[data-page-links*='Concept'] > div.rm-block-main > div.rm-block-text > span {
-	background-color: #303030;
-	border-radius: 3px;
-	padding: 3px 7px 3px 0px;
-}
-
-span.rm-page-ref[data-tag="Terminology"],
-span.rm-page-ref[data-tag="Concept"],
-span.rm-page-ref[data-tag^="Principles"],
-span.rm-page-ref[data-tag^="Procedure"],
-span.rm-page-ref[data-tag="Solutions"],
-span.rm-page-ref[data-tag="Article"],
-span.rm-page-ref[data-tag="Book"],
-span.rm-page-ref[data-tag="Figure"],
-span.rm-page-ref[data-tag="Words"],
-span.rm-page-ref[data-tag="Thesis"]{
-/* 	background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
-	background-color: #485563;
-	color:white !important;
-	padding-top: 3px;
-	padding-bottom: 3px;
-	padding-left: 5px;
-	padding-right: 8px;
- 	border-left: 3px solid #705FBD;	
-	border-radius: 3px;
-}
-
-
-span.rm-page-ref[data-tag^="TO"]{
-  	background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
-  	color:#fff !important;
-  	padding: 3px 7px;
-	border-radius: 3px;
-}
-
-span.rm-page-ref[data-tag="Shortcuts"],
-span.rm-page-ref[data-tag="Quick Capture"] {
-background-image: linear-gradient(135deg, #f83600 0%, #f9d423 100%);
-  	color:#fff !important;
-  	padding: 3px 7px;
-	border-radius: 3px;
-}
-
-span.rm-page-ref[data-tag="ComputerScience Concept"] {
-	background-image: linear-gradient(-45deg, #88d3ce 0%, #6e45e2 100%);
-	color:#fff !important;
-  	padding: 3px 7px;
-	border-radius: 3px;
-}
-
-.roam-block-container[data-page-links*='Index'] > div.rm-block-main > div.rm-block-text > span {
-	background-color: #303030;
-	border-radius: 8px;
-	padding: 3px 7px 3px 0px;
-}
-
-span.rm-page-ref[data-tag="Index"] {
-	background-color: #485563;
-	color:white !important;
-  	padding: 3px 7px;
-	width: 50px;
-	border-radius: 3px;
-}
-
+.roam-block-container[data-page-links*='Concept'] > div.rm-block-main > div.rm-block-text > span,
 .roam-block-container[data-page-links*='Skill'] > div.rm-block-main > div.rm-block-text > span,
 .roam-block-container[data-page-links*='Bubble'] > div.rm-block-main > div.rm-block-text > span,
 .roam-block-container[data-page-links*='Bird'] > div.rm-block-main > div.rm-block-text > span,
@@ -1062,126 +995,106 @@ span.rm-page-ref[data-tag="Index"] {
 	padding: 3px 7px 3px 0px;
 }
 
+/* 带后托盘的Tag 泛用设置 */ 
+span.rm-page-ref[data-tag="Terminology"],
+span.rm-page-ref[data-tag="Concept"],
+span.rm-page-ref[data-tag^="Principles"],
+span.rm-page-ref[data-tag^="Procedure"],
+span.rm-page-ref[data-tag="Solutions"],
+span.rm-page-ref[data-tag="Article"],
+span.rm-page-ref[data-tag="Book"],
+span.rm-page-ref[data-tag="Figure"],
+span.rm-page-ref[data-tag="Words"],
+span.rm-page-ref[data-tag="Log"],
+span.rm-page-ref[data-tag^="Wh"],
+span.rm-page-ref[data-tag="How?"],
+span.rm-page-ref[data-tag^="Reference"],
+span.rm-page-ref[data-tag="Index"],
+span.rm-page-ref[data-tag^="Log"],
+span.rm-page-ref[data-tag="Skill"],
+span.rm-page-ref[data-tag="Topic"],
+span.rm-page-ref[data-tag="Bird"],
+span.rm-page-ref[data-tag="Relevant"],
+span.rm-page-ref[data-tag="Crystal"],
+span.rm-page-ref[data-tag="Sand"],
+span.rm-page-ref[data-tag="Bubble"],
+span.rm-page-ref[data-tag="Rose"],
 span.rm-page-ref[data-tag="Seed"]{
 	background-color: #485563;
-	color:white !important;
-	padding-top: 3px;
-	padding-bottom: 3px;
-	padding-left: 5px;
-	padding-right: 8px; 
- 	border-left: 3px solid #43e97b;	
-	border-radius: 3px;
 }
 
-span.rm-page-ref[data-tag="个人管理跟踪日志"]{
-	background-color: #485563;
-	color:white !important;
-	padding-top: 3px;
-	padding-bottom: 3px;
-	padding-left: 5px;
-	padding-right: 8px; 
- 	border-left: 3px solid #ff9a9e;	
-	border-radius: 3px;
-}
-
-span.rm-page-ref[data-tag="Rose"] {
-	background-color: #485563;
-  	color:#fff !important;
-	padding-top: 3px;
-	padding-bottom: 3px;
-	padding-left: 5px;
-	padding-right: 8px;
- 	border-left: 3px solid #ff7373;	
-	border-radius: 3px;
-}
-
-span.rm-page-ref[data-tag="Bubble"] {
-	background-color: #485563;
-  	color:#fff !important;
-	padding-top: 3px;
-	padding-bottom: 3px;
-	padding-left: 5px;
-	padding-right: 8px;
- 	border-left: 3px solid #00f2fe;	
-	border-radius: 3px;
-}
-
-span.rm-page-ref[data-tag="Sand"] {
-	background-color: #485563;
-	color:white !important;
-	padding-top: 3px;
-	padding-bottom: 3px;
-	padding-left: 5px;
-	padding-right: 8px;
- 	border-left: 3px solid #f6d365;	
-	border-radius: 3px;
-}
-
-span.rm-page-ref[data-tag="Crystal"] {
-	background-color: #485563;
-	color:white !important;
-	padding-top: 3px;
-	padding-bottom: 3px;
-	padding-left: 5px;
-	padding-right: 8px;
- 	border-left: 3px solid #9795f0;	
-	border-radius: 3px;
-}
-
-span.rm-page-ref[data-tag="Relevant"] {
-	background-color: #485563;
-	color:white !important;
-	padding-top: 3px;
-	padding-bottom: 3px;
-	padding-left: 5px;
-	padding-right: 8px;
- 	border-left: 3px solid #8ec5fc;	
-	border-radius: 3px;
-}
-span.rm-page-ref[data-tag="Topic"] {
-	background-color: #485563;
-	color:white !important;
-	padding-top: 3px;
-	padding-bottom: 3px;
-	padding-left: 5px;
-	padding-right: 8px;
- 	border-left: 3px solid #667eea;	
-	border-radius: 3px;
-}
-
-
-span.rm-page-ref[data-tag="Bird"] {
-	background-color: #485563;
-  	color:#fff !important;
-	padding-top: 3px;
-	padding-bottom: 3px;
-	padding-left: 5px;
-	padding-right: 8px;
- 	border-left: 3px solid #abe4ef;	
-	border-radius: 3px;
-}
-
-span.rm-page-ref[data-tag="Skill"] {
-	background-color: #485563;
-  	color:#fff !important;
-	padding-top: 3px;
-	padding-bottom: 3px;
-	padding-left: 5px;
-	padding-right: 8px;
- 	border-left: 3px solid #37ecba;	
-	border-radius: 3px;
-}
+span.rm-page-ref[data-tag="Terminology"],
+span.rm-page-ref[data-tag="Concept"],
+span.rm-page-ref[data-tag^="Principles"],
+span.rm-page-ref[data-tag^="Procedure"],
+span.rm-page-ref[data-tag="Solutions"],
+span.rm-page-ref[data-tag="Article"],
+span.rm-page-ref[data-tag="Book"],
+span.rm-page-ref[data-tag="Figure"],
+span.rm-page-ref[data-tag="Words"], 
 span.rm-page-ref[data-tag="Log"],
 span.rm-page-ref[data-tag^="Wh"],
 span.rm-page-ref[data-tag="How?"],
 span.rm-page-ref[data-tag^="Reference"]{
-	background-color: #303030;
-  	color:#fff !important;
-	padding-top: 3px;
-	padding-bottom: 3px;
-	padding-left: 5px;
-	padding-right: 8px;
  	border-left: 3px solid #705FBD;	
+}
+
+span.rm-page-ref[data-tag="Seed"]{
+ 	border-left: 3px solid #43e97b;	
+}
+
+span.rm-page-ref[data-tag^="Log"]{
+ 	border-left: 3px solid #ff9a9e;	
+}
+
+span.rm-page-ref[data-tag="Rose"] {
+ 	border-left: 3px solid #ff7373;	
+}
+
+span.rm-page-ref[data-tag="Bubble"] {
+ 	border-left: 3px solid #00f2fe;	
+}
+
+span.rm-page-ref[data-tag="Sand"] {
+ 	border-left: 3px solid #f6d365;	
+}
+
+span.rm-page-ref[data-tag="Crystal"] {
+ 	border-left: 3px solid #9795f0;	
+}
+
+span.rm-page-ref[data-tag="Relevant"] {
+ 	border-left: 3px solid #8ec5fc;	
+}
+span.rm-page-ref[data-tag="Topic"] {
+ 	border-left: 3px solid #667eea;	
+}
+
+span.rm-page-ref[data-tag="Bird"] {
+ 	border-left: 3px solid #abe4ef;	
+}
+
+span.rm-page-ref[data-tag="Index"] {
+ 	border-left: 3px solid #74ebd5;	
+}
+
+span.rm-page-ref[data-tag="Skill"] {
+ 	border-left: 3px solid #37ecba;	
+}
+
+/* 全彩Tag */
+span.rm-page-ref[data-tag^="TO"]{
+  	background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+  	color:#fff !important;
+  	padding: 3px 7px;
+	border-radius: 3px;
+}
+
+span.rm-page-ref[data-tag="Shortcuts"],
+span.rm-page-ref[data-tag="Quick Capture"] {
+background-image: linear-gradient(135deg, #f83600 0%, #f9d423 100%);
+  	color:#fff !important;
+  	padding: 3px 7px;
 	border-radius: 3px;
 }
 
