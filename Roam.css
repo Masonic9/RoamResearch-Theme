@@ -1013,19 +1013,9 @@ span.rm-page-ref[data-tag="Thesis"]{
 }
 
 
-span.rm-page-ref[data-tag="TOWRITE"],
-span.rm-page-ref[data-tag="TODO"],
-span.rm-page-ref[data-tag="TOREAD"]{
+span.rm-page-ref[data-tag^="TO"]{
   	background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
   	color:#fff !important;
-  	padding: 3px 7px;
-	border-radius: 3px;
-}
-
-span.rm-page-ref[data-tag="Archive"] {
-	background: linear-gradient(to bottom right, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
- 	background-blend-mode:multiply;
-	color:#fff !important;
   	padding: 3px 7px;
 	border-radius: 3px;
 }
@@ -1059,6 +1049,7 @@ span.rm-page-ref[data-tag="Index"] {
 	border-radius: 3px;
 }
 
+.roam-block-container[data-page-links*='Skill'] > div.rm-block-main > div.rm-block-text > span,
 .roam-block-container[data-page-links*='Bubble'] > div.rm-block-main > div.rm-block-text > span,
 .roam-block-container[data-page-links*='Bird'] > div.rm-block-main > div.rm-block-text > span,
 .roam-block-container[data-page-links*='Rose'] > div.rm-block-main > div.rm-block-text > span,
@@ -1079,6 +1070,17 @@ span.rm-page-ref[data-tag="Seed"]{
 	padding-left: 5px;
 	padding-right: 8px; 
  	border-left: 3px solid #43e97b;	
+	border-radius: 3px;
+}
+
+span.rm-page-ref[data-tag="个人管理跟踪日志"]{
+	background-color: #485563;
+	color:white !important;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 5px;
+	padding-right: 8px; 
+ 	border-left: 3px solid #ff9a9e;	
 	border-radius: 3px;
 }
 
@@ -1159,16 +1161,20 @@ span.rm-page-ref[data-tag="Bird"] {
 	border-radius: 3px;
 }
 
+span.rm-page-ref[data-tag="Skill"] {
+	background-color: #485563;
+  	color:#fff !important;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 5px;
+	padding-right: 8px;
+ 	border-left: 3px solid #37ecba;	
+	border-radius: 3px;
+}
 span.rm-page-ref[data-tag="Log"],
-span.rm-page-ref[data-tag="List"],
-span.rm-page-ref[data-tag="Post"],
-span.rm-page-ref[data-tag="Posts"],
 span.rm-page-ref[data-tag^="Wh"],
-span.rm-page-ref[data-tag^="是什么？"],
 span.rm-page-ref[data-tag="How?"],
-span.rm-page-ref[data-tag^="Ref."],
-span.rm-page-ref[data-tag^="Rel."],
-span.rm-page-ref[data-tag="42SmartBlock"]{
+span.rm-page-ref[data-tag^="Reference"]{
 	background-color: #303030;
   	color:#fff !important;
 	padding-top: 3px;
@@ -1176,14 +1182,6 @@ span.rm-page-ref[data-tag="42SmartBlock"]{
 	padding-left: 5px;
 	padding-right: 8px;
  	border-left: 3px solid #705FBD;	
-	border-radius: 3px;
-}
-
-span.rm-page-ref[data-tag="if"],
-span.rm-page-ref[data-tag="then"]{
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-	color: white;
-	padding: 3px 7px;
 	border-radius: 3px;
 }
 
