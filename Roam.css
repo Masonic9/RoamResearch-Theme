@@ -41,7 +41,7 @@
   
   /* 右侧标题的 */
   #right-sidebar .rm-sidebar-outline .rm-title-display {
-    font-size: 24px;
+    font-size: 2em;
       margin: 0px 0px 8px 0px;
   }
   
@@ -97,8 +97,8 @@
   /* 回链中的高亮 */
   .roam-highlight,
   .block-highlight-yellow {
-      background-color: var(--main-color) !important;
-      border: 1px solid var(--side-color);
+      background-color: transparent !important;
+      border-right: 1px solid var(--side-color)!important;
   }
   
   
@@ -177,7 +177,7 @@
   
   /* 右侧栏字号 */
   #right-sidebar .rm-block-text {
-    font-size: 16px !important;
+    font-size: 1em !important;
   }
   
   
@@ -187,11 +187,9 @@
     margin-top: -4px !important;
   }
   .rm-level1, .rm-heading-level-1 > .rm-block__self .rm-block__input {
-    font-size: 26px !important;
+    font-size: 1.8em !important;
     line-height: 1.5 !important;
 	font-weight: bold;
-
-	 
   }
   
   h1 {
@@ -203,7 +201,7 @@
     margin-top: -3px !important;
   }
   .rm-level2, .rm-heading-level-2 > .rm-block__self .rm-block__input {
-    font-size: 22px !important;
+    font-size: 1.6em !important;
     line-height: 1.5 !important;
     font-weight: 600 !important;
   }
@@ -213,7 +211,7 @@
     margin-top: -2px !important;
   }
   .rm-level3, .rm-heading-level-3 > .rm-block__self .rm-block__input {
-    font-size: 20px !important;
+    font-size: 1.4em !important;
     line-height: 1.5 !important;
 	  font-weight: 600 !important;
 	  color:white;
@@ -499,14 +497,14 @@ div.roam-article span > a:not(.rm-alias-page):after {
   
   /* Credits */
   .roam-topbar > div > div:last-child ul.bp3-menu:after {
-    content: "Better Roam Research theme by @linuz90";
+    content: "EynzoLab Roam v1.0";
     width: 160px;
     display: inline-block;
-    font-size: 13px;
+    font-size: 1em;
     line-height: 1.4;
     padding: 7px;
     opacity: 0.6;
-    color: var(--font-color-lighter);
+    color: black
   }
   
   
@@ -623,7 +621,7 @@ div.roam-article span > a:not(.rm-alias-page):after {
     > div:first-child
     div
     span:not(.bp3-icon-chevron-right) {
-    font-size: 16px;
+    font-size: 1.2em;
     line-height: 1.3;
     /* truncate to smaller width, use css for ellipsis */
     --max-width: 1000px;
@@ -870,7 +868,7 @@ div.roam-article span > a:not(.rm-alias-page):after {
     color: white;
 	 text-decoration: underline;
   }
-	a[class="rm-alias rm-alias-page"] {
+	a[class="rm-alias rm-alias-page"],a[class="rm-alias rm-alias-block"] {
 		background: linear-gradient(0deg, var(--custom-background-color) 2px, white 1px, transparent 1px);
       line-height: 24px;
       padding-bottom: 4px;
@@ -883,6 +881,13 @@ div.roam-article span > a:not(.rm-alias-page):after {
       padding-bottom: 4px;
 		color: white;
 	}
+a[class="rm-alias rm-alias-block"]:hover {
+			background: linear-gradient(0deg, var(--custom-background-color-hover) 2px, white 1px, transparent 1px);
+      text-decoration: none;
+      line-height: 24px;
+      padding-bottom: 4px;
+		color: white;
+}
 
 	/* 超链接颜色 */
 	a {
@@ -905,7 +910,7 @@ div.roam-article span > a:not(.rm-alias-page):after {
   
   /* 正文字体 */
   .rm-block-text {
-      font-size: 18px !important;
+      font-size: 1.2em !important;
   }
   
   /* hiccup 分隔线 */
@@ -926,7 +931,7 @@ div.roam-article span > a:not(.rm-alias-page):after {
   }
 	/* 加密块 */
 	.rm-encrypted-block {
-		font-size: 16px;
+		font-size: 1.2em;
 		color: white;
 		padding: 0 0 0 0;
 		background-color:transparent;
@@ -943,14 +948,15 @@ div.roam-article span > a:not(.rm-alias-page):after {
   blockquote {
     background-color: #101010; /* Blockquotes背景颜色 */
     border-left: 5px solid var(--main-color); /* Blockquotes 左侧颜色 */
-    font-size: 18px;
+    font-size: 1.2em;
     margin-bottom: 0px;
+	  border-radius: 3px;
   }
   
   .rm-bq {
     background-color: #101010; /* Blockquotes背景颜色 */
     border-left: 5px solid var(--main-color); /* Blockquotes 左侧颜色 */
-    font-size: 18px;
+    font-size: 1.2em;
     margin-bottom: 0px;
   }
   
@@ -960,7 +966,7 @@ div.roam-article span > a:not(.rm-alias-page):after {
   }
   /* 表格字体调整 */
 	.roam-table th, .roam-table td, .roam-table tr {
-		font-size: 16px;
+		font-size: 1.2em;
 	}
   /* Query 框*/
 	.rm-query .rm-query-title{
@@ -971,10 +977,39 @@ div.roam-article span > a:not(.rm-alias-page):after {
 	}	
 
 	/* 右侧的引用次数统计小按钮以及Link小按钮 */
-	.bp3-button:not(.bp3-intent-primary) {
-		color: #888 !important;
+	.block-ref-count-button{
+		color: white !important;
 	}
-  
+	.rm-reference-main button {
+		color: white !important;
+	}
+
+/* Roam42 */
+.tribute-container li {
+	background-color: #202020;
+}
+.rm-block-ref {
+	color: #ccc;
+	border-bottom: none!important;
+/* 	padding-left: 5px; */
+/* 	border-left: 1px solid white; */
+}
+
+.rm-inline-references {
+	background-color: #202020
+}
+.rm-zoom-mask {
+	font-size: 1.2em;
+	color: white;
+}
+.rm-inline-reference {
+	padding-bottom: 5px;
+	padding-top: 5px
+}
+.bp3-button.bp3-small, .bp3-small .bp3-button {
+	color: white;
+}
+
 
 /* Colorful Tag */
 span.rm-page-ref-tag {
@@ -985,50 +1020,16 @@ span.rm-page-ref-tag {
 	padding-left: 5px;
 	padding-right: 8px;
 	background-color: #485563;
-}
-span.rm-page-ref-tag:first-letter {
-	visibility: hidden;
+	border-left: 3px solid #705FBD;	
 }
 
 /* 带后托盘的Tag */ 
-.roam-block-container[data-page-links*='Video'] > div.rm-block-main > div.rm-block-text > span,
 .roam-block-container[data-page-links*='Index'] > div.rm-block-main > div.rm-block-text > span,
-.roam-block-container[data-page-links*='Solutions'] > div.rm-block-main > div.rm-block-text > span,
-.roam-block-container[data-page-links*='Procedure'] > div.rm-block-main > div.rm-block-text > span,
-.roam-block-container[data-page-links*='Article'] > div.rm-block-main > div.rm-block-text > span,
-.roam-block-container[data-page-links*='Principles'] > div.rm-block-main > div.rm-block-text > span,
-.roam-block-container[data-page-links*='Book'] > div.rm-block-main > div.rm-block-text > span,
-.roam-block-container[data-page-links*='Figure'] > div.rm-block-main > div.rm-block-text > span,
-.roam-block-container[data-page-links*='Concept'] > div.rm-block-main > div.rm-block-text > span,
-.roam-block-container[data-page-links*='Skill'] > div.rm-block-main > div.rm-block-text > span,
-.roam-block-container[data-page-links*='Bubble'] > div.rm-block-main > div.rm-block-text > span,
-.roam-block-container[data-page-links*='Bird'] > div.rm-block-main > div.rm-block-text > span,
-.roam-block-container[data-page-links*='Rose'] > div.rm-block-main > div.rm-block-text > span,
-.roam-block-container[data-page-links*='Seed'] > div.rm-block-main > div.rm-block-text > span,
-.roam-block-container[data-page-links*='Relevant'] > div.rm-block-main > div.rm-block-text > span,
-.roam-block-container[data-page-links*='Sand'] > div.rm-block-main > div.rm-block-text > span,
-.roam-block-container[data-page-links*='Crystal'] > div.rm-block-main > div.rm-block-text > span {
+.roam-block-container[data-page-links*='Topic'] > div.rm-block-main > div.rm-block-text > span
+{
 	background-color: #303030;
 	border-radius: 8px;
 	padding: 3px 7px 3px 0px;
-}
-
-/* 带后托盘的Tag 泛用设置 */ 
-span.rm-page-ref[data-tag="Video"],
-span.rm-page-ref[data-tag="Terminology"],
-span.rm-page-ref[data-tag="Concept"],
-span.rm-page-ref[data-tag^="Principles"],
-span.rm-page-ref[data-tag^="Procedure"],
-span.rm-page-ref[data-tag="Solutions"],
-span.rm-page-ref[data-tag="Article"],
-span.rm-page-ref[data-tag="Book"],
-span.rm-page-ref[data-tag="Figure"],
-span.rm-page-ref[data-tag="Words"], 
-span.rm-page-ref[data-tag="Log"],
-span.rm-page-ref[data-tag^="Wh"],
-span.rm-page-ref[data-tag="How?"],
-span.rm-page-ref[data-tag^="Reference"]{
- 	border-left: 3px solid #705FBD;	
 }
 
 span.rm-page-ref[data-tag="Seed"]{
@@ -1038,9 +1039,16 @@ span.rm-page-ref[data-tag="Seed"]{
 span.rm-page-ref[data-tag^="Log"]{
  	border-left: 3px solid #ff9a9e;	
 }
+span.rm-page-ref[data-tag^="Feedback"]{
+ 	border-left: 3px solid #ff9a9e;	
+}
 
 span.rm-page-ref[data-tag="Rose"] {
  	border-left: 3px solid #ff7373;	
+}
+
+span.rm-page-ref[data-tag="Fleet"] {
+ 	border-left: 3px solid #FF85CA;	
 }
 
 span.rm-page-ref[data-tag="Bubble"] {
@@ -1079,6 +1087,15 @@ span.rm-page-ref[data-tag="Category"] {
 span.rm-page-ref[data-tag="Taxonomy"] {
 	border-left: 3px solid #b8cbb8;	
 }
+span.rm-page-ref[data-tag="Viewpoint"] {
+	border-left: 3px solid #e2d1c3;	
+}
+span.rm-page-ref[data-tag="Output"] {
+	border-left: 3px solid #fbed96;	
+}
+span.rm-page-ref[data-tag="Input"] {
+	border-left: 3px solid #abecd6;	
+}
 
 /* 全彩Tag */
 span.rm-page-ref[data-tag^="TO"]{
@@ -1087,18 +1104,3 @@ span.rm-page-ref[data-tag^="TO"]{
   	padding: 3px 7px;
 	border-radius: 3px;
 }
-
-span.rm-page-ref[data-tag="Shortcuts"],
-span.rm-page-ref[data-tag="Quick Capture"] {
-background-image: linear-gradient(135deg, #f83600 0%, #f9d423 100%);
-  	color:#fff !important;
-  	padding: 3px 7px;
-	border-radius: 3px;
-}
-
-/* Roam42 */
-.tribute-container li {
-	background-color: #202020;
-}
-
-
