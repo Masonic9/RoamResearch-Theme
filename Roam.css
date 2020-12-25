@@ -842,14 +842,14 @@ div.roam-article span > a:not(.rm-alias-page):after {
   
   
   /* Highlight */
-  span.roam-highlight {
+  .rm-highlight {
     color:#ffffff !important;
     padding: 0px 3px;
     font-weight: 500;
-    margin-left: .05em;
-    margin-right: .05em;
+/*     margin-left: .05em; */
+/*     margin-right: .05em; */
     background: transparent !important;
-    border: 1px solid transparent;
+    border-bottom: 2px solid transparent;
     border-image: linear-gradient(to bottom right, #667eea 0%, #764ba2 100%);
     border-image-slice: 10;
   }
@@ -864,7 +864,7 @@ div.roam-article span > a:not(.rm-alias-page):after {
   }
   
   /* aliase */
-  a[class="rm-alias rm-alias-external"] {
+  a[class="rm-alias rm-alias--external"] {
     color: white;
 	 text-decoration: underline;
   }
@@ -1015,16 +1015,16 @@ a[class="rm-alias rm-alias-block"]:hover {
 .block-ref-count-button.rm-active {
 	background-color: #202020;
 }
-
+.rm-zoom-path .rm-zoom-item .rm-zoom-item-content .rm-zoom-mask {
+	color: white;
+}
 
 /* Colorful Tag */
 span.rm-page-ref--tag {
-	padding-top: 3px;
-	padding-bottom: 3px;
+	padding: 3px 5px 3px 5px;
 	border-radius: 3px;
 	color:#fff !important;
-	padding-left: 5px;
-	padding-right: 5px;
+
 	background-color: #485563;
 	border-left: 3px solid #705FBD;	
 }
@@ -1037,16 +1037,51 @@ span.rm-page-ref--tag {
 	border-radius: 8px;
 	padding: 3px 7px 3px 0px;
 }
+span.rm-page-ref[data-tag="Seed2"] + span {
+	border-left: 2px solid #43e97b;	
+	border-radius: 5px;
+	padding: 5px;
+	background-color: #485563;
+}
+
+span.rm-page-ref[data-tag="Sand2"] + span {
+	border-left: 2px solid #f6d365;	
+	border-radius: 5px;
+	padding: 5px;
+	background-color: #303030;
+}
+
+span.rm-page-ref[data-tag="Crystal2"] + span {
+ 	border-left: 2px solid #9795f0;	
+	border-radius: 5px;
+	padding: 5px;
+	background-color: #303030;
+}
+
+span.rm-page-ref[data-tag="Relevant2"] + span {
+ 	border-left: 3px solid #8ec5fc;		
+	border-radius: 5px;
+	padding: 7px 5px 7px 5px;
+	background-color: #303030;
+}
+
+span.rm-page-ref[data-tag="Rose2"] + span {
+ 	border-left: 2px solid #ff7373;	
+	border-radius: 5px;
+	padding: 5px;
+	background-color: #303030;
+}
+
+span.rm-page-ref[data-tag="Relevant2"],
+span.rm-page-ref[data-tag="Crystal2"],
+span.rm-page-ref[data-tag="Seed2"],
+span.rm-page-ref[data-tag="Sand2"],
+span.rm-page-ref[data-tag="Rose2"] {
+ 	display: none;
+}
 
 span.rm-page-ref[data-tag="Seed"]{
  	border-left: 3px solid #43e97b;	
-}
-
-span.rm-page-ref[data-tag^="Log"]{
- 	border-left: 3px solid #ff9a9e;	
-}
-span.rm-page-ref[data-tag^="Feedback"]{
- 	border-left: 3px solid #ff9a9e;	
 }
 
 span.rm-page-ref[data-tag="Rose"] {
@@ -1072,6 +1107,22 @@ span.rm-page-ref[data-tag="Crystal"] {
 span.rm-page-ref[data-tag="Relevant"] {
  	border-left: 3px solid #8ec5fc;	
 }
+
+span.rm-page-ref[data-tag^="Log"]{
+ 	border-left: 3px solid #ff9a9e;	
+}
+span.rm-page-ref[data-tag^="Feedback"]{
+ 	border-left: 3px solid #ff9a9e;	
+}
+
+span.rm-page-ref[data-tag="Fleet"] {
+ 	border-left: 3px solid #FF85CA;	
+}
+
+span.rm-page-ref[data-tag="Bubble"] {
+ 	border-left: 3px solid #00f2fe;	
+}
+
 span.rm-page-ref[data-tag="Topic"] {
  	border-left: 3px solid #667eea;	
 }
@@ -1102,6 +1153,12 @@ span.rm-page-ref[data-tag="Output"] {
 span.rm-page-ref[data-tag="Input"] {
 	border-left: 3px solid #abecd6;	
 }
+
+span.rm-page-ref[data-tag="Computer Science"] {
+ 	border-left: 3px solid #88d3ce;	
+	
+}
+
 
 /* 全彩Tag */
 span.rm-page-ref[data-tag^="TO"]{
