@@ -1007,7 +1007,7 @@ a[class="rm-alias rm-alias-block"]:hover {
 	padding-top: 5px
 }
 .bp3-button.bp3-small, .bp3-small .bp3-button {
-	color: white;
+	color: black;
 }
 .rm-reference-item > div:first-child > div:first-child div span:not(.bp3-icon-chevron-right), .roam-article > div:first-child:not(.roam-log-container) > div:first-child div span:not(.bp3-icon-chevron-right) {
 	font-size: 1.1em;
@@ -1016,6 +1016,18 @@ a[class="rm-alias rm-alias-block"]:hover {
 	background-color: #202020;
 }
 .rm-zoom-path .rm-zoom-item .rm-zoom-item-content .rm-zoom-mask {
+	color: white;
+}
+.block-bullet-view .bp3-button:not([class*="bp3-icon"]) {
+    background: transparent !important;
+    color: white !important;
+    padding: 5px 10px;
+    line-height: 2em;
+    border-radius: 5px !important;
+    border: 1px solid white !important;
+    box-shadow: none !important;
+}
+.rm-page-ref--namespace {
 	color: white;
 }
 
@@ -1030,7 +1042,7 @@ span.rm-page-ref--tag {
 }
 
 /* 带后托盘的Tag */ 
-.roam-block-container[data-page-links*='Index'] > div.rm-block-main > div.rm-block-text > span,
+/* .roam-block-container[data-page-links*='Index'] > div.rm-block-main > div.rm-block-text > span, */
 .roam-block-container[data-page-links*='Topic'] > div.rm-block-main > div.rm-block-text > span
 {
 	background-color: #303030;
@@ -1135,6 +1147,8 @@ span.rm-page-ref[data-tag="Index"] {
  	border-left: 3px solid #74ebd5;	
 }
 
+span.rm-page-ref[data-tag="Indicator"],
+span.rm-page-ref[data-tag="Capacity"],
 span.rm-page-ref[data-tag="Skill"] {
  	border-left: 3px solid #37ecba;	
 }
@@ -1154,11 +1168,15 @@ span.rm-page-ref[data-tag="Input"] {
 	border-left: 3px solid #abecd6;	
 }
 
+span.rm-page-ref[data-tag="Technique"] {
+	border-left: 3px solid #c7eafd;
+}
+
+
 span.rm-page-ref[data-tag="Computer Science"] {
  	border-left: 3px solid #88d3ce;	
 	
 }
-
 
 /* 全彩Tag */
 span.rm-page-ref[data-tag^="TO"]{
