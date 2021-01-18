@@ -17,7 +17,7 @@
   --secondary-background-color: hsl(0, 0%, 15%);
   --popup-background-color: hsl(0, 0%, 4%);
     
-  --main-color: #02aab0;
+  --main-color: #705FBD;
   --side-color: #00cdac;
   --nestlink-color: white;
   
@@ -189,7 +189,7 @@
   .rm-level1, .rm-heading-level-1 > .rm-block__self .rm-block__input {
     font-size: 1.8em !important;
     line-height: 1.5 !important;
-	font-weight: normal;
+	font-weight: normal;	
   }
   
   h1 {
@@ -214,12 +214,11 @@
     font-size: 1.4em !important;
     line-height: 1.5 !important;
 	  font-weight: normal;
-	  color:white;
-	  
+	  color:white; 
   }
  
    /* 在链接后面加图标 */
-div.roam-article span > a:not(.rm-alias-page):after {
+/* div.roam-article span > a:not(.rm-alias-page):after {
     content: "";
 	
     display: inline-block;
@@ -232,7 +231,7 @@ div.roam-article span > a:not(.rm-alias-page):after {
     position: relative;
     bottom: -2px;
     left: -1px;
-  } 
+  }  */
   
   div.roam-article .rm-level1 span > a:not(.rm-alias-page):after {
     background-size: 20px 20px;
@@ -467,17 +466,10 @@ div.roam-article span > a:not(.rm-alias-page):after {
     font-size: var(--font-size) !important;
   }
   
-  .block-bullet-view {
-    margin-bottom: 3px !important;
-  }
-  
   .controls .simple-bullet-outer {
     margin-top: 4px !important;
   }
   
-  .block-border-left {
-    border-left-color: var(--subtle-border-color) !important;
-  }
 	/* 块引用的 Mention 位置调整 */
 	.rm-reference-main {
 		padding-top: 0px !important;
@@ -948,7 +940,7 @@ a[class="rm-alias rm-alias-block"]:hover {
   blockquote {
     background-color: #101010; /* Blockquotes背景颜色 */
     border-left: 5px solid var(--main-color); /* Blockquotes 左侧颜色 */
-    font-size: 1.2em;
+    font-size: 1em;
     margin-bottom: 0px;
 	  border-radius: 3px;
   }
@@ -956,7 +948,7 @@ a[class="rm-alias rm-alias-block"]:hover {
   .rm-bq {
     background-color: #101010; /* Blockquotes背景颜色 */
     border-left: 5px solid var(--main-color); /* Blockquotes 左侧颜色 */
-    font-size: 1.2em;
+    font-size: 1em;
     margin-bottom: 0px;
   }
   
@@ -1024,31 +1016,95 @@ a[class="rm-alias rm-alias-block"]:hover {
     padding: 5px 10px;
     line-height: 2em;
     border-radius: 5px !important;
-    border: 1px solid white !important;
+/*     border: 1px solid white !important; */
     box-shadow: none !important;
 }
 .rm-page-ref--namespace {
 	color: white;
 }
+a.rm-alias--page:hover {
+	color: white;
+	text-decoration: none;	
+}
+a.rm-alias--block {
+	color: white;
+	text-decoration: none;	
+	background: linear-gradient(0deg, var(--custom-background-color) 1px, white 1px, transparent 1px);
+  /* background-position: 0 100%; */
+  line-height: 24px;
+  padding-bottom: 2px;
+}
+.rm-page-ref--namespace {
+	background: linear-gradient(0deg, var(--custom-background-color) 1px, white 1px, transparent 1px);
+  /* background-position: 0 100%; */
+  line-height: 24px;
+  padding-bottom: 2px;
+}
+
+.rm-page-ref--namespace:hover {
+  background: linear-gradient(0deg, var(--custom-background-color-hover) 2px, white 1px, transparent 1px);
+  /* background-position: 0 100%; */
+  text-decoration: none;
+  line-height: 24px;
+  padding-bottom: 2px;
+}
+a.rm-alias--page {
+	background: linear-gradient(0deg, var(--custom-background-color) 1px, white 1px, transparent 1px);
+  line-height: 24px;
+  padding-bottom: 2px;
+}
+a.rm-alias--page:hover {
+  background: linear-gradient(0deg, var(--custom-background-color-hover) 2px, white 1px, transparent 1px);
+  /* background-position: 0 100%; */
+  text-decoration: none;
+  line-height: 24px;
+  padding-bottom: 2px;
+}
+
+.block-border-left {
+	border-left: 1px solid white;
+	border-left-color: #575757 !important;
+}
+.roam-block-container {
+	border-radius: 0px;
+}
+.rm-hr {
+	border-top: 1px solid white!important;
+	border: none;
+}
+
 
 /* Colorful Tag */
-span.rm-page-ref--tag {
+/* span.rm-page-ref--tag {
 	padding: 3px 5px 3px 5px;
 	border-radius: 3px;
 	color:#fff !important;
 
 	background-color: #485563;
 	border-left: 3px solid #705FBD;	
+} */
+
+span.rm-page-ref--tag {
+	padding: 1px 5px;
+	border-radius: 3px;
+	color:#fff !important;
+	border-left: 3px solid #705FBD;	
+	margin-left: 2px;
 }
 
+
+
 /* 带后托盘的Tag */ 
-/* .roam-block-container[data-page-links*='Index'] > div.rm-block-main > div.rm-block-text > span, */
+/* .roam-block-container[data-page-links*='Index'] > div.rm-block-main > div.rm-block-text > span,
+.roam-block-container[data-page-links*='Intel'] > div.rm-block-main > div.rm-block-text > span,
+.roam-block-container[data-page-links*='Zettel'] > div.rm-block-main > div.rm-block-text > span,
+.roam-block-container[data-page-links*='Workflow'] > div.rm-block-main > div.rm-block-text > span,
 .roam-block-container[data-page-links*='Topic'] > div.rm-block-main > div.rm-block-text > span
 {
 	background-color: #303030;
 	border-radius: 8px;
 	padding: 3px 7px 3px 0px;
-}
+} */
 span.rm-page-ref[data-tag="Seed2"] + span {
 	border-left: 2px solid #43e97b;	
 	border-radius: 5px;
@@ -1092,8 +1148,14 @@ span.rm-page-ref[data-tag="Rose2"] {
  	display: none;
 }
 
+span.rm-page-ref[data-tag^="I-"],
 span.rm-page-ref[data-tag="Seed"]{
  	border-left: 3px solid #43e97b;	
+}
+
+
+span.rm-page-ref[data-tag="Archived"] {
+ 	border-left: 3px solid #596164;	
 }
 
 span.rm-page-ref[data-tag="Rose"] {
@@ -1111,7 +1173,8 @@ span.rm-page-ref[data-tag="Bubble"] {
 span.rm-page-ref[data-tag="Sand"] {
  	border-left: 3px solid #f6d365;	
 }
-
+span.rm-page-ref[data-tag="Zettel"],
+span.rm-page-ref[data-tag^="K-"],
 span.rm-page-ref[data-tag="Crystal"] {
  	border-left: 3px solid #9795f0;	
 }
@@ -1134,7 +1197,7 @@ span.rm-page-ref[data-tag="Fleet"] {
 span.rm-page-ref[data-tag="Bubble"] {
  	border-left: 3px solid #00f2fe;	
 }
-
+span.rm-page-ref[data-tag="Permanent"],
 span.rm-page-ref[data-tag="Topic"] {
  	border-left: 3px solid #667eea;	
 }
@@ -1168,16 +1231,36 @@ span.rm-page-ref[data-tag="Input"] {
 	border-left: 3px solid #abecd6;	
 }
 
+span.rm-page-ref[data-tag^="Intel"],
 span.rm-page-ref[data-tag="Technique"] {
 	border-left: 3px solid #c7eafd;
 }
 
-
-span.rm-page-ref[data-tag="Computer Science"] {
- 	border-left: 3px solid #88d3ce;	
-	
+span.rm-page-ref[data-tag="CS-Concept"] {
+ 	border-left: 3px solid #88d3ce;
+}
+span.rm-page-ref[data-tag^="CS"] {
+	border-left: 3px solid #c7eafd;
 }
 
+span.rm-page-ref[data-tag="Keyword"] {
+ 	border-left: 3px solid #ed6ea0;	
+}
+
+span.rm-page-ref[data-tag="ZK-Index"] {
+ 	border-left: 3px solid #537895;
+}
+
+span.rm-page-ref[data-tag="Workflow"] {
+ 	border-left: 3px solid #8fd3f4;	
+}
+span.rm-page-ref[data-tag="Atomic Principle"] {
+ 	border-left: 3px solid #8fd3f4;	
+}
+
+span.rm-page-ref[data-tag="Link"] {
+	border-left: 3px solid #8ec5fc;
+}
 /* 全彩Tag */
 span.rm-page-ref[data-tag^="TO"]{
   	background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
