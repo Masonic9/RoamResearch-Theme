@@ -1,4 +1,30 @@
-@-moz-document url-prefix("https://roamresearch.com/#/app") {
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+/* 修改字体 */
+
+div,
+textarea,
+.level2 {
+    font-family: 'Montserrat', 'Noto Serif SC', sans-serif !important;
+}
+
+.rm-level2, .rm-heading-level-2 > .rm-block__self .rm-block__input {
+	font-family: 'Montserrat', 'Noto Serif SC', sans-serif !important;
+}
+
+.rm-level1, .rm-heading-level-1 > .rm-block__self .rm-block__input {
+	font-family: 'Noto Serif SC' !important;
+}
+.rm-level2, .rm-heading-level-2 > .rm-block__self .rm-block__input {
+	font-family: 'Noto Serif SC' !important;
+}
+
+.rm-level3, .rm-heading-level-3 > .rm-block__self .rm-block__input {
+	font-family: 'Noto Serif SC' !important;
+}
+
 /* 变量 */
 :root {
 	--page-shadow: 0px 6px 10px rgba(43, 45, 47, .05);
@@ -10,70 +36,64 @@
 	--light-text-color: #5c7496;
 	--link: rgb(236,112,53);
 }
-}
 
-@-moz-document url-prefix("https://roamresearch.com/#/app") {
 /* 页面卡片化 */
 .roam-article {
-    padding-right: 10px !important;
-    max-width: 740px;
-    padding-left: 20px !important;
+  padding-right: 10px !important;
+  max-width: 740px;
+  padding-left: 20px !important;
 }
 
 .roam-article > div {
-    padding: 30px 50px 50px 50px;
-    background: var(--page-color);
-    box-shadow: var(--page-shadow);
-    border: 1px solid #e5ecf1;
-    border-radius: 6px;
-    margin-top: 10px !important;
-    width: auto;
+  padding: 30px 50px 50px 50px;
+  background: var(--page-color);
+  box-shadow: var(--page-shadow);
+  border: 1px solid #e5ecf1;
+  border-radius: 6px;
+  margin-top: 10px !important;
+  width: auto;
 }
 
 .roam-body-main {
-    top: 0 !important;
-    height: 100% !important;
-    width: auto !important;
-    position: relative !important;
-    padding-left: 50px;
-    min-width: 600px;
+  top: 0 !important;
+  height: 100% !important;
+  width: auto !important;
+  position: relative !important;
+  padding-left: 50px;
+  min-width: 600px;
 }
 
 .roam-main {
-    width: unset !important;
-    max-width: 100% !important;
-    height: 100%;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    margin: auto;
-    transition: padding-left 0.15s ease-out;
+  width: unset !important;
+  max-width: 100% !important;
+  height: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  margin: auto;
+  transition: padding-left 0.15s ease-out;
 }
 
 .rm-reference-item {
-    background: var(--reference-item-background) !important;
-    margin-top: 8px;
-    border-radius: 6px;
-    border: 1px solid #f0f0f0 !important;
-    margin-right: 8px;
-    flex: 1 1 100%;
-    word-break: break-word;
-    padding: 8px 10px 8px 2px !important;
+  background: var(--reference-item-background) !important;
+  margin-top: 8px;
+  border-radius: 6px;
+  border: 1px solid #f0f0f0 !important;
+  margin-right: 8px;
+  flex: 1 1 100%;
+  word-break: break-word;
+  padding: 8px 10px 8px 2px !important;
 }
 .rm-ref-page-view-title a {
-    color: var(--light-text-color);
-    font-size: 1.1em;
-    text-decoration: none !important;
-}
+  color: var(--light-text-color);
+  font-size: 1.1em;
+  text-decoration: none !important;
 }
 
-@-moz-document url-prefix("https://roamresearch.com/#/app") {
 /* 页面底色 */
 .roam-body {
   background-color: var(--page-color) !important;
 }
-}
 
-@-moz-document url-prefix("https://roamresearch.com/#/app") {
 /* 右侧卡片化 */
 #right-sidebar {
 	background-color: var(--page-color) !important;
@@ -114,10 +134,6 @@
 
 
 
-
-}
-
-@-moz-document url-prefix("https://roamresearch.com/#/app") {
 /* 链接着色 */
 .rm-page-ref {
 	color: var(--link);
@@ -126,9 +142,7 @@
 	text-decoration: none;
 	color: black;
 } */
-}
 
-@-moz-document url-prefix("https://roamresearch.com/#/app") {
 /* 左侧悬浮框 */
 .starred-pages > a > .page:hover {
   background-color: transparent !important;
@@ -208,9 +222,6 @@
   pointer-events: auto;
 
 }
-}
-
-@-moz-document url-prefix("https://roamresearch.com/#/app") {
 /* 代码高亮 */
 .cm-s-default .cm-def,
 span[role="presentation"],
@@ -231,52 +242,43 @@ span[role="presentation"],
 .cm-s-default .cm-number {
     color: rgb(104,151,187)
 }
-}
 
-@-moz-document url-prefix("https://roamresearch.com/#/app") {
 /* 层级式容器 */
 
 .roam-block-container[data-page-links*='Drawer']  {
-/* 	border: 1px solid white; */
-/* 	background-color:rgba(151,149,240,0.1); */
-	background-color: rgba(43, 45, 47, .02);
-/* 	background-color:rgba(45,45,45,0.3); */
-	margin-top: 10px;
-	border: var(--border-color);
-	padding-top: 5px;
-	padding-right: 15px;
-	padding-left: 15px;
-	margin-bottom: 15px;
-}
+  /* 	border: 1px solid white; */
+  /* 	background-color:rgba(151,149,240,0.1); */
+    background-color: rgba(43, 45, 47, .02);
+  /* 	background-color:rgba(45,45,45,0.3); */
+    margin-top: 10px;
+    border: var(--border-color);
+    padding-top: 5px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-bottom: 15px;
+  }
+  
+  div[data-page-links*='Drawer'] div[class="rm-multibar"]{
+    border:none;
+  }
+  /* .roam-block-container[data-page-links*='Box'] div[class="controls rm-block__controls"] {
+    display: none;
+  } */
+  
+  span.rm-page-ref[data-tag=Drawer] {
+    display: none;
+    padding-left: 5px
+  }
 
-div[data-page-links*='Drawer'] div[class="rm-multibar"]{
-	border:none;
-}
-/* .roam-block-container[data-page-links*='Box'] div[class="controls rm-block__controls"] {
-	display: none;
-} */
-
-span.rm-page-ref[data-tag=Drawer] {
-	display: none;
-	padding-left: 5px
-}
-
-}
-
-@-moz-document url-prefix("https://roamresearch.com/#/app") {
-/* 分割线 */
+  /* 分割线 */
 .rm-hr {
 	border: none;
     border-bottom: 1px solid var(--text-color)!important;
 /*     border: none; */
 }
 
-}
-
-@-moz-document url-prefix("https://roamresearch.com/#/app") {
 /* 高亮 */
 .rm-highlight {
 	margin: 0px;
 	padding: 0px;
-}
 }
